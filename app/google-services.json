@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998223048677",
+    "project_id": "halisi-wellness",
+    "storage_bucket": "halisi-wellness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998223048677:android:36e4685c14237701a5090c",
+        "android_client_info": {
+          "package_name": "com.example.halisiwellness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998223048677-cuu1e3l5d55869ufif4jfu2lbmi6pa7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAilNvBLPkgnhAc-hiiBFYICvU_d6XRr9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998223048677-cuu1e3l5d55869ufif4jfu2lbmi6pa7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

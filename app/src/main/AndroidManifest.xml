@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
         <activity android:name=".ui.LoginActivity"></activity>
-        <activity android:name=".ui.SignupActivity" />
-        <activity android:name=".ui.ChatboxActivity" />
+        <activity android:name=".ui.SignUpActivity" />
+        <activity android:name=".ui.ChatBoxActivity" />
         <activity android:name=".ui.ArticlesActivity" />
         <activity android:name=".ui.AppointmentActivity" />
         <activity android:name=".ui.DashboardActivity" />
