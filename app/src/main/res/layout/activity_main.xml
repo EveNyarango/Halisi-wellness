@@ -34,6 +34,206 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content">
 
+<!--          home-->
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:elevation="6dp"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp">
+
+              <LinearLayout
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="16dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@drawable/home"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"/>
+                  <TextView
+                      android:layout_marginTop="12dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Home"
+                      android:textColor="@color/white"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+<!--          profile-->
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:elevation="6dp"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp"
+              >
+              <LinearLayout
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="16dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@drawable/profile"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"/>
+                  <TextView
+                      android:layout_marginTop="12dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Profile"
+                      android:textColor="@color/white"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+<!--          appointment-->
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:elevation="6dp"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp"
+              >
+              <LinearLayout
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="16dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@drawable/appoint"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"/>
+                  <TextView
+                      android:layout_marginTop="12dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Appointment"
+                      android:textColor="@color/white"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+<!--          article-->
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:elevation="6dp"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp"
+              >
+              <LinearLayout
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="16dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@drawable/blog"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"/>
+                  <TextView
+                      android:layout_marginTop="12dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Articles"
+                      android:textColor="@color/white"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+<!--calender-->
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:elevation="6dp"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp"
+              >
+              <LinearLayout
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="16dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@drawable/calendar"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"/>
+                  <TextView
+                      android:layout_marginTop="12dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Calender"
+                      android:textColor="@color/colorAccent"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+<!--          diary-->
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:elevation="6dp"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp"
+              >
+              <LinearLayout
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="16dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:src="@drawable/diary"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"/>
+                  <TextView
+                      android:layout_marginTop="12dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Food diary"
+                      android:textColor="@color/colorAccent"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
+
+
       </GridLayout>
 
   </LinearLayout>
