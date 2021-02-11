@@ -88,7 +88,7 @@
                   android:layout_height="match_parent">
 
                   <ImageView
-                      android:id="@+id/profileImageView"
+                      android:id="@+id/ProfileImageView"
                       android:src="@drawable/profile"
                       android:layout_width="80dp"
                       android:layout_height="80dp"/>
@@ -122,7 +122,7 @@
                   android:layout_height="match_parent">
 
                   <ImageView
-                      android:id="@+id/appointImageView"
+                      android:id="@+id/AppointImageView"
                       android:src="@drawable/appoint"
                       android:layout_width="80dp"
                       android:layout_height="80dp"/>
@@ -157,7 +157,7 @@
                   android:layout_height="match_parent">
 
                   <ImageView
-                      android:id="@+id/blogImageView"
+                      android:id="@+id/BlogImageView"
                       android:src="@drawable/blog"
                       android:layout_width="80dp"
                       android:layout_height="80dp"/>
@@ -191,7 +191,7 @@
                   android:layout_height="match_parent">
 
                   <ImageView
-                      android:id="@+id/calImageView"
+                      android:id="@+id/CalImageView"
                       android:src="@drawable/calendar"
                       android:layout_width="80dp"
                       android:layout_height="80dp"/>
@@ -225,7 +225,7 @@
                   android:layout_height="match_parent">
 
                   <ImageView
-                      android:id="@+id/diaryImageView"
+                      android:id="@+id/DiaryImageView"
                       android:src="@drawable/diary"
                       android:layout_width="80dp"
                       android:layout_height="80dp"/>
