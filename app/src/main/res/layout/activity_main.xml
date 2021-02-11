@@ -12,6 +12,16 @@
       android:layout_height="wrap_content"
       android:orientation="vertical">
 
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_columnWeight="1"
+          android:layout_rowWeight="1"
+          android:elevation="6dp"
+          app:cardElevation="6dp"
+          app:cardCornerRadius="12dp"
+          android:layout_margin="12dp">
+
       <RelativeLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -20,13 +30,15 @@
           android:layout_marginLeft="20dp">
 
           <ImageView
-              android:layout_width="150dp"
-              android:layout_height="150dp"
+              android:layout_width="match_parent"
+              android:layout_height="130dp"
+              android:layout_centerHorizontal="true"
               android:layout_alignParentRight="true"
-              android:layout_marginRight="140dp"
+              android:paddingBottom="50dp"
               android:src="@drawable/halisi"/>
 
       </RelativeLayout>
+      </androidx.cardview.widget.CardView>
 
       <GridLayout
           android:columnCount="2"
@@ -35,39 +47,6 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content">
 
-<!--          home-->
-          <androidx.cardview.widget.CardView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_columnWeight="1"
-              android:layout_rowWeight="1"
-              android:elevation="6dp"
-              app:cardElevation="6dp"
-              app:cardCornerRadius="12dp"
-              android:layout_margin="12dp">
-
-              <LinearLayout
-                  android:gravity="center"
-                  android:orientation="vertical"
-                  android:padding="16dp"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent">
-
-                  <ImageView
-                      android:id="@+id/homeImageView"
-                      android:src="@drawable/home"
-                      android:layout_width="80dp"
-                      android:layout_height="80dp"/>
-                  <TextView
-                      android:layout_marginTop="12dp"
-                      android:layout_width="wrap_content"
-                      android:layout_height="wrap_content"
-                      android:text="Home"
-                      android:textColor="@color/colorAccent"/>
-
-              </LinearLayout>
-
-          </androidx.cardview.widget.CardView>
 
 <!--          profile-->
           <androidx.cardview.widget.CardView
@@ -240,6 +219,39 @@
 
           </androidx.cardview.widget.CardView>
 
+          <!--          Meal Plan-->
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_columnWeight="1"
+              android:layout_rowWeight="1"
+              android:elevation="6dp"
+              app:cardElevation="6dp"
+              app:cardCornerRadius="12dp"
+              android:layout_margin="12dp">
+
+              <LinearLayout
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="16dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                  <ImageView
+                      android:id="@+id/homeImageView"
+                      android:src="@drawable/nut1"
+                      android:layout_width="80dp"
+                      android:layout_height="80dp"/>
+                  <TextView
+                      android:layout_marginTop="12dp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Meal Plan"
+                      android:textColor="@color/colorAccent"/>
+
+              </LinearLayout>
+
+          </androidx.cardview.widget.CardView>
 
       </GridLayout>
 
