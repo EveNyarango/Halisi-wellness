@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="linearLayout" type="id" />
+    <item name="cityEditText" type="id" />
+    <item name="passwordEditText" type="id" />
+    <item name="patientEditText" type="id" />
+    <item name="doctorEditText" type="id" />
+    <item name="dateEditText" type="id" />
+    <item name="timeEditText" type="id" />
+    <item name="purposeEditText" type="id" />
+    <item name="createUserButton" type="id" />
+</resources>
