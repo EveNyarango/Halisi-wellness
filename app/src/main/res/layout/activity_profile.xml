@@ -4,12 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ProfileActivity"
-    android:background="@drawable/nut3">
+    tools:context=".ui.ProfileActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:background="@drawable/ic_wave5"/>
 
     <ImageView
         android:id="@+id/Profile2"
-        android:src="@drawable/profile"
+        android:src="@drawable/user"
         android:layout_centerHorizontal="true"
         android:paddingTop="10dp"
         android:layout_width="80dp"
@@ -28,6 +32,7 @@
         android:id="@+id/name1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="First Name:"
         android:textStyle="bold"
         android:textSize="14sp" />
@@ -47,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Second Name:"
+            android:textStyle="bold"
             android:textSize="14sp" />
 
         <EditText
@@ -64,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Date Of Birth:"
+            android:textStyle="bold"
             android:textSize="14sp" />
 
         <EditText
@@ -81,6 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Phone Number:"
+            android:textStyle="bold"
             android:textSize="14sp" />
 
         <EditText
@@ -88,7 +96,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="+254"
-            android:textColor="@color/colorAccent"
             android:padding="10dp"
             />
 
@@ -98,6 +105,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Weight:"
+            android:textStyle="bold"
             android:textSize="14sp" />
 
         <EditText
@@ -105,7 +113,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Kgs"
-            android:textColor="@color/colorAccent"
             android:padding="10dp"
             />
 
@@ -114,6 +121,7 @@
             android:id="@+id/height"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:text="Height"
             android:textSize="14sp" />
 
@@ -122,7 +130,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="metres"
-            android:textColor="@color/colorAccent"
             android:padding="10dp"
             />
 
