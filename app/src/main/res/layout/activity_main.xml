@@ -12,33 +12,33 @@
       android:layout_height="wrap_content"
       android:orientation="vertical">
 
-      <androidx.cardview.widget.CardView
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_columnWeight="1"
-          android:layout_rowWeight="1"
-          android:elevation="6dp"
-          app:cardElevation="6dp"
-          app:cardCornerRadius="12dp"
-          android:layout_margin="12dp">
+<!--      <androidx.cardview.widget.CardView-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:layout_columnWeight="1"-->
+<!--          android:layout_rowWeight="1"-->
+<!--          android:elevation="6dp"-->
+<!--          app:cardElevation="6dp"-->
+<!--          app:cardCornerRadius="12dp"-->
+<!--          android:layout_margin="12dp">-->
 
-      <RelativeLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="32dp"
-          android:layout_marginRight="20dp"
-          android:layout_marginLeft="20dp">
+<!--      <RelativeLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:layout_marginTop="32dp"-->
+<!--          android:layout_marginRight="20dp"-->
+<!--          android:layout_marginLeft="20dp">-->
 
-          <ImageView
-              android:layout_width="match_parent"
-              android:layout_height="130dp"
-              android:layout_centerHorizontal="true"
-              android:layout_alignParentRight="true"
-              android:paddingBottom="50dp"
-              android:src="@drawable/halisi"/>
+<!--          <ImageView-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="130dp"-->
+<!--              android:layout_centerHorizontal="true"-->
+<!--              android:layout_alignParentRight="true"-->
+<!--              android:paddingBottom="50dp"-->
+<!--              android:src="@drawable/halisi"/>-->
 
-      </RelativeLayout>
-      </androidx.cardview.widget.CardView>
+<!--      </RelativeLayout>-->
+<!--      </androidx.cardview.widget.CardView>-->
 
       <GridLayout
           android:columnCount="2"
