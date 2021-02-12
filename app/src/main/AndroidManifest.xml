@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
 
-        <activity android:name=".ui.OtpActivity"></activity>
+        <activity android:name=".ui.OtpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".ui.DiaryActivity"></activity>
         <activity android:name=".ui.ReminderActivity" />
@@ -23,11 +29,7 @@
         <activity android:name=".ui.DashboardActivity" />
         <activity android:name=".ui.ProfileActivity" />
         <activity android:name=".ui.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
