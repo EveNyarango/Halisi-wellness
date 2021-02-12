@@ -9,8 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
+
+        <activity android:name=".ui.OtpActivity"></activity>
+
         <activity android:name=".ui.DiaryActivity"></activity>
         <activity android:name=".ui.ReminderActivity" />
+
         <activity android:name=".ui.LoginActivity" />
         <activity android:name=".ui.SignUpActivity" />
         <activity android:name=".ui.ChatBoxActivity" />
