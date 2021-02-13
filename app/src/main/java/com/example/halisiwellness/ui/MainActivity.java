@@ -4,33 +4,62 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+
 
 import com.example.halisiwellness.R;
 
-import static java.lang.Thread.sleep;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+
+
+public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
+
+    @BindView(R.id.ProfileImageView)
+    ImageView mProfileImageView;
+    @BindView(R.id.AppointImageView) ImageView mAppointImageView;
+    @BindView(R.id.BlogImageView) ImageView mBlogImageView;
+    @BindView(R.id.CalImageView) ImageView mCalImageView;
+    @BindView(R.id.DiaryImageView) ImageView mDiaryImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ButterKnife.bind(this);
 
-        final Intent intent = new Intent( MainActivity.this,OtpActivity.class);
-        Thread thread = new Thread(){
-            @Override
-            public void run() {
-                try {
-                    sleep( 5000);
-                } catch (InterruptedException e){
-                    e.printStackTrace();
-                }finally {
-                    startActivity(intent);
-                    finish();
-                }
-            }
+        mProfileImageView.setOnClickListener(this);
+        mAppointImageView.setOnClickListener(this);
+        mBlogImageView.setOnClickListener(this);
+        mCalImageView.setOnClickListener(this);
+        mDiaryImageView.setOnClickListener(this);
+    }
 
-        };thread.start();
+    @Override
+    public void onClick(View v) {
+
+        if(v == mProfileImageView) {
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            startActivity(intent);
+        }
+        if(v == mAppointImageView) {
+            Intent intent = new Intent(MainActivity.this, AppointmentActivity.class);
+            startActivity(intent);
+        }
+        if(v == mBlogImageView) {
+            Intent intent = new Intent(MainActivity.this, ArticlesActivity.class);
+            startActivity(intent);
+        }
+        if(v == mCalImageView) {
+            Intent intent = new Intent(MainActivity.this, ReminderActivity.class);
+            startActivity(intent);
+        }
+        if(v == mDiaryImageView) {
+            Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
+            startActivity(intent);
+        }
     }
 }
