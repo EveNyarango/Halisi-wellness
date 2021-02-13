@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#098765"
+
+    android:background="@drawable/nut4"
+
+    
+
 
     tools:context=".ui.AppointmentActivity">
 
@@ -14,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:background="#098765"
+        android:background="@color/colorAccent"
         android:orientation="vertical"
         android:padding="30dp">
 
@@ -111,9 +115,9 @@
             android:gravity="center"
             android:minEms="@android:integer/config_longAnimTime"
             android:padding="10dp"
-            android:textSize="20sp"
             android:text="Submit"
-            android:textColor="@color/design_default_color_background" />
+            android:textColor="@color/design_default_color_background"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
