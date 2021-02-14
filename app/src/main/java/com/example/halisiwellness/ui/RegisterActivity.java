@@ -11,23 +11,22 @@ import com.example.halisiwellness.R;
 
 import butterknife.BindView;
 
-public class LoginActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
-    @BindView(R.id.login_btn)
-    Button mLogonBtn;
+    @BindView(R.id.register_btn)
+    Button mRegisterButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
 
-        mLogonBtn.setOnClickListener(new View.OnClickListener() {
+        mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
+
             }
         });
     }
-
-
 }
