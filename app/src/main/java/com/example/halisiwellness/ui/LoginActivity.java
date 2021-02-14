@@ -10,8 +10,9 @@ import android.widget.Button;
 import com.example.halisiwellness.R;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     @BindView(R.id.login_btn)
     Button mLogonBtn;
@@ -21,13 +22,14 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mLogonBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
-            }
-        });
+        ButterKnife.bind(this);
+
+        mLogonBtn.setOnClickListener(this);
     }
 
-
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
 }

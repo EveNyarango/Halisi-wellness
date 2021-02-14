@@ -22,22 +22,22 @@
           app:cardCornerRadius="12dp"
           android:layout_margin="12dp">
 
-      <RelativeLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="32dp"
-          android:layout_marginRight="20dp"
-          android:layout_marginLeft="20dp">
+<!--      <RelativeLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:layout_marginTop="32dp"-->
+<!--          android:layout_marginRight="20dp"-->
+<!--          android:layout_marginLeft="20dp">-->
 
-          <ImageView
-              android:layout_width="match_parent"
-              android:layout_height="130dp"
-              android:layout_centerHorizontal="true"
-              android:layout_alignParentRight="true"
-              android:paddingBottom="50dp"
-              android:src="@drawable/halisi"/>
+<!--          <ImageView-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="130dp"-->
+<!--              android:layout_centerHorizontal="true"-->
+<!--              android:layout_alignParentRight="true"-->
+<!--              android:paddingBottom="50dp"-->
+<!--              android:src="@drawable/halisi"/>-->
 
-      </RelativeLayout>
+<!--      </RelativeLayout>-->
       </androidx.cardview.widget.CardView>
 
       <GridLayout
