@@ -6,12 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
+
 
 import com.example.halisiwellness.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
 
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
