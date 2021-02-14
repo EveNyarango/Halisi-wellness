@@ -14,9 +14,13 @@
         <activity android:name=".ui.OtpActivity" />
 =======
 
+        <activity android:name=".ui.bgActivity"></activity>
+        <activity android:name=".ui.DiaryActivity" />
+
         <activity android:name=".ui.OtpActivity"></activity>
 
-        <activity android:name=".ui.DiaryActivity"></activity>
+        
+
         <activity android:name=".ui.ReminderActivity" />
 
 >>>>>>> 6b24fe78cf217eed7b6576b656b2be978c3c565c
