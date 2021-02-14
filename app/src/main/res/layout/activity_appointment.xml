@@ -5,13 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-android:background="@color/colorAccent"
-    tools:context=".ui.AppointmentActivity">
+    android:background="#66cdaa"
 
-<!--    <ImageView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="320dp"-->
-<!--        android:background="@drawable/ic_wave5"/>-->
+
+    tools:context=".ui.AppointmentActivity">
 
     <TextView
         android:id="@+id/textView2"
