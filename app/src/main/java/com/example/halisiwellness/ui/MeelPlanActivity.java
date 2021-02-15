@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.halisiwellness.R;
 
-public class SignUpActivity extends AppCompatActivity {
+public class MeelPlanActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_meel_plan);
     }
 }
