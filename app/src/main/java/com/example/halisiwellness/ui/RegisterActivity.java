@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.example.halisiwellness.R;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -20,11 +21,12 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        ButterKnife.bind(this);
 
         mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(RegisterActivity.this,LoginActivity.class);
+                Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
 
             }
         });
