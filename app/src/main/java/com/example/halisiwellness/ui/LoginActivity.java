@@ -13,7 +13,7 @@ import com.example.halisiwellness.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
     @BindView(R.id.login_btn) Button mLogonBtn;
     @BindView(R.id.textRegister) TextView mTextRegister;
@@ -24,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
+<<<<<<< HEAD
         mLogonBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,7 +40,14 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+=======
+        mLogonBtn.setOnClickListener(this);
+>>>>>>> 24b25e4bf76526b16ddf64e9beb84178712e02f2
     }
 
-
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
 }

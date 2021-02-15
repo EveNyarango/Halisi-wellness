@@ -7,7 +7,7 @@
 
     android:background="#66cdaa"
 
-   
+
     tools:context=".ui.AppointmentActivity">
 
     <TextView
