@@ -43,9 +43,9 @@ public class AppointmentActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sp7.edit();
                 editor.putString("n1", s);
                 editor.apply();
-                Toast.makeText(AppointmentActivity.this, "Submition successfully", Toast.LENGTH_SHORT).show();
-//                Intent intent = new Intent(AppointmentActivity.this, MainActivity.class);
-//                startActivity(intent);
+                Toast.makeText(AppointmentActivity.this, "Submission successfully", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(AppointmentActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 

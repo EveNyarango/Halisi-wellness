@@ -15,8 +15,12 @@ import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
-    @BindView(R.id.login_btn) Button mLogonBtn;
-    @BindView(R.id.textRegister) TextView mTextRegister;
+
+    @BindView(R.id.login_btn)
+    Button mLogonBtn;
+    @BindView(R.id.textRegister)
+    TextView mTextRegister;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,30 +28,24 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-<<<<<<< HEAD
-        mLogonBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
-        mTextRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
-=======
+      
         mLogonBtn.setOnClickListener(this);
->>>>>>> 24b25e4bf76526b16ddf64e9beb84178712e02f2
+
+        mTextRegister.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-        startActivity(intent);
+        if(v == mLogonBtn) {
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
+        }
+
+        if(v == mTextRegister) {
+            Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+            startActivity(intent);
+        }
     }
 }

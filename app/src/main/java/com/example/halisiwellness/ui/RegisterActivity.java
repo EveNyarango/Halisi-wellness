@@ -12,7 +12,7 @@ import com.example.halisiwellness.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
 
     @BindView(R.id.register_btn)
     Button mRegisterButton;
@@ -23,13 +23,20 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         ButterKnife.bind(this);
 
-        mRegisterButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(RegisterActivity.this,OtpActivity.class);
-                startActivity(intent);
 
-            }
-        });
+//         mRegisterButton.setOnClickListener(new View.OnClickListener() {
+//             @Override
+//             public void onClick(View view) {
+//                 Intent intent = new Intent(RegisterActivity.this,OtpActivity.class);
+//                 startActivity(intent);
+
+        mRegisterButton.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
+        startActivity(intent);
     }
 }
