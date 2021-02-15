@@ -10,9 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
 
+
         <activity android:name=".ui.RegisterActivity"></activity>
         <activity android:name=".ui.OtpActivity" />
         <activity android:name=".ui.bgActivity"></activity>
+
+        <activity android:name=".ui.RegisterActivity"></activity>
+        <activity android:name=".ui.OtpActivity" /
+
+        
 
         <activity android:name=".ui.DiaryActivity" >
             <meta-data
@@ -20,12 +26,24 @@
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
 
+
         <activity android:name=".ui.ReminderActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
         <activity android:name=".ui.LoginActivity" >
+
+        <activity android:name=".ui.MainActivity"/>
+
+        <activity android:name=".ui.SignUpActivity" />
+        <activity android:name=".ui.ChatBoxActivity" />
+        <activity android:name=".ui.ArticlesActivity" />
+        <activity android:name=".ui.AppointmentActivity" />
+        <activity android:name=".ui.DashboardActivity" />
+        <activity android:name=".ui.ProfileActivity" />
+            <activity android:name=".ui.LoginActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
