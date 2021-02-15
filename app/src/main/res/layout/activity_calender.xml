@@ -5,6 +5,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
+    android:orientation="vertical"
     tools:context=".ui.CalenderActivity">
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:background="@drawable/ic_wave_6"/>-->
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="Reminder"
+        android:textAlignment="center"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+
+
+
+        <CalendarView
+            android:id="@+id/CalendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp">
+
+        </CalendarView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="34dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Booked Date" />
 
 </LinearLayout>

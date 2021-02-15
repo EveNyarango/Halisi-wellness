@@ -12,6 +12,8 @@ import android.widget.ImageView;
 
 import com.example.halisiwellness.R;
 
+import java.util.Calendar;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -58,7 +60,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             startActivity(intent);
         }
         if(v == mCalImageView) {
-            Intent intent = new Intent(MainActivity.this, ReminderActivity.class);
+            Intent intent = new Intent(MainActivity.this, CalenderActivity.class);
             startActivity(intent);
         }
         if(v == mDiaryImageView) {
