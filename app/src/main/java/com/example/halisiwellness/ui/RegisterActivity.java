@@ -23,6 +23,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         setContentView(R.layout.activity_register);
         ButterKnife.bind(this);
 
+
+//         mRegisterButton.setOnClickListener(new View.OnClickListener() {
+//             @Override
+//             public void onClick(View view) {
+//                 Intent intent = new Intent(RegisterActivity.this,OtpActivity.class);
+//                 startActivity(intent);
+
         mRegisterButton.setOnClickListener(this);
 
     }

@@ -9,10 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
+<<<<<<< HEAD
+        <activity android:name=".ui.MeelPlanActivity"></activity>
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.OtpActivity" />
+        <activity android:name=".ui.bgActivity" />
+        <activity android:name=".ui.DiaryActivity" />
+        <activity android:name=".ui.ReminderActivity" />
+        <activity android:name=".ui.MainActivity" />
+=======
+
 
         <activity android:name=".ui.RegisterActivity"></activity>
         <activity android:name=".ui.OtpActivity" />
         <activity android:name=".ui.bgActivity"></activity>
+
+        <activity android:name=".ui.RegisterActivity"></activity>
+        <activity android:name=".ui.OtpActivity" /
+
+        
 
         <activity android:name=".ui.DiaryActivity" >
             <meta-data
@@ -20,12 +35,29 @@
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
 
+
         <activity android:name=".ui.ReminderActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
         <activity android:name=".ui.LoginActivity" >
+
+        <activity android:name=".ui.MainActivity"/>
+
+>>>>>>> 24b25e4bf76526b16ddf64e9beb84178712e02f2
+        <activity android:name=".ui.SignUpActivity" />
+        <activity android:name=".ui.ChatBoxActivity" />
+        <activity android:name=".ui.ArticlesActivity" />
+        <activity android:name=".ui.AppointmentActivity" />
+        <activity android:name=".ui.DashboardActivity" />
+        <activity android:name=".ui.ProfileActivity" />
+<<<<<<< HEAD
+        <activity android:name=".ui.LoginActivity">
+=======
+            <activity android:name=".ui.LoginActivity" >
+
+>>>>>>> 24b25e4bf76526b16ddf64e9beb84178712e02f2
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
