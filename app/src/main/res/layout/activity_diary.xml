@@ -26,7 +26,6 @@
 <!--        android:layout_height="wrap_content"-->
 <!--        android:text="Food Diary"-->
 <!--        android:textColor="@color/colorBrown"-->
-<!--        android:layout_below="@id/food"-->
 <!--        android:textSize="30dp"-->
 <!--       android:layout_marginLeft="110dp"-->
 <!--        android:textStyle="bold" />-->
@@ -195,7 +194,7 @@
               <EditText
                   android:layout_width="0dp"
                   android:layout_height="wrap_content"
-                  android:text="Enter snacks"
+                  android:hint="Enter snacks"
                   android:padding="10sp"
                   android:textSize="14sp"
                   android:layout_weight="4"
@@ -206,10 +205,11 @@
 
     <Button
         android:id="@+id/Submit"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Submit"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50sp"
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
         android:textColor="@color/white"/>
