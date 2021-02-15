@@ -16,7 +16,7 @@ import com.example.halisiwellness.R;
 
 public class AppointmentActivity extends AppCompatActivity {
 
-    EditText etDate, etVenue, etPhone;
+    EditText etDate, etPhone, etDocName, etName1, etName;
     Button btnSubmit;
     SharedPreferences sp7;
 
@@ -26,9 +26,10 @@ public class AppointmentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_appointment);
 
         etDate = findViewById(R.id.etDate);
-//        etTime = findViewById(R.id.etTime);
-        etVenue = findViewById(R.id.etVenue);
+       etDocName = findViewById(R.id.etDocName);
+       etName1 = findViewById(R.id.etName1);
         etPhone = findViewById(R.id.etPhone);
+        etName = findViewById(R.id.etName);
         btnSubmit = findViewById(R.id.btnSubmit);
         sp7 = getSharedPreferences("f4", MODE_PRIVATE);
 
@@ -38,14 +39,16 @@ public class AppointmentActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Editable s1 = etDate.getText();
                 Editable s2 = etPhone.getText();
-                Editable s3 = etVenue.getText();
-                String s = "You have an appointment on " + s1 + ", " + s2 + " " + s3;
+                Editable s3 = etDocName.getText();
+                Editable s4 = etName1.getText();
+                Editable s5 = etName.getText();
+                String s = "You have an appointment on " + s1 + ", " + s2 + " ," + s3 + ", " + s4 + "," + s5 +"";
                 SharedPreferences.Editor editor = sp7.edit();
                 editor.putString("n1", s);
                 editor.apply();
-                Toast.makeText(AppointmentActivity.this, "Submition successfully", Toast.LENGTH_SHORT).show();
-//                Intent intent = new Intent(AppointmentActivity.this, MainActivity.class);
-//                startActivity(intent);
+                Toast.makeText(AppointmentActivity.this, "Submission successfully", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(AppointmentActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
