@@ -12,8 +12,16 @@
         <activity android:name=".ui.RegisterActivity"></activity>
         <activity android:name=".ui.OtpActivity" />
 
+<<<<<<< HEAD
+=======
+        <activity android:name=".ui.bgActivity"></activity>
+        <activity android:name=".ui.DiaryActivity" />
 
-        <activity android:name=".ui.DiaryActivity"></activity>
+        <activity android:name=".ui.OtpActivity"></activity>
+>>>>>>> 9455819d63774ba8de62c88517ba0a0ec1db1a4b
+
+        
+
         <activity android:name=".ui.ReminderActivity" />
 
         <activity android:name=".ui.MainActivity"/>
