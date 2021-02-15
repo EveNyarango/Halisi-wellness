@@ -4,93 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LoginActivity">
-
+    tools:context=".ui.RegisterActivity">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="320dp"
         android:background="@drawable/ic_wave5"/>
 
+
     <TextView
-        android:id="@+id/login_head"
+        android:id="@+id/register_head"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login Your account"
+        android:text="Create Your Account Here"
         android:textSize="30dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="300dp"
         android:textColor="@color/black"
         android:textAlignment="center"
         android:gravity="center_horizontal" />
 
 
     <EditText
-        android:id="@+id/login_number"
+        android:id="@+id/register_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/login_head"
+        android:layout_below="@id/register_head"
+        android:textColor="@color/black"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="enter your name"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_name"
         android:textColor="@color/black"
         android:padding="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:hint="enter your Phone number"
+        android:hint="enter your number"
         android:textAlignment="center"
         android:textColorHint="@color/black"
         android:gravity="center_horizontal" />
 
+
     <EditText
-        android:id="@+id/login_password"
+        android:id="@+id/register_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/login_number"
+        android:layout_below="@id/register_phone"
         android:textColor="@color/black"
         android:padding="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:hint="enter your password"
-        android:inputType="textPassword"
         android:textAlignment="center"
         android:textColorHint="@color/black"
+        android:inputType="textPassword"
         android:gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="If you don't have an account create here"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:id="@+id/textRegister"
-        android:layout_below="@id/login_btn"/>
-
-
     <Button
-        android:id="@+id/login_btn"
+        android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:textColor="@color/black"
-        android:background="#008800"
-        android:layout_below="@id/login_password"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:text="REGISTER NOW"
+        android:textColor="@color/white"
+        android:background="#FFFFFF"
+        android:layout_below="@id/register_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
         android:padding="10dp"/>
 
-    <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="If you don't have an account create here"
-        android:textSize="10dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:id="@+id/textRegister"
-        android:layout_below="@id/login_btn"/>
 
 </RelativeLayout>
 
