@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="If you don't have an account create here"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
