@@ -238,7 +238,7 @@
                   android:layout_height="match_parent">
 
                   <ImageView
-                      android:id="@+id/homeImageView"
+                      android:id="@+id/MealImageView"
                       android:src="@drawable/nut1"
                       android:layout_width="80dp"
                       android:layout_height="80dp"/>

@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     @BindView(R.id.BlogImageView) ImageView mBlogImageView;
     @BindView(R.id.CalImageView) ImageView mCalImageView;
     @BindView(R.id.DiaryImageView) ImageView mDiaryImageView;
+    @BindView(R.id.MealImageView) ImageView mMealImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         mBlogImageView.setOnClickListener(this);
         mCalImageView.setOnClickListener(this);
         mDiaryImageView.setOnClickListener(this);
+        mMealImageView.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +63,10 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         }
         if(v == mDiaryImageView) {
             Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
+            startActivity(intent);
+        }
+        if(v == mMealImageView) {
+            Intent intent = new Intent(MainActivity.this, MeelPlanActivity.class);
             startActivity(intent);
         }
     }
