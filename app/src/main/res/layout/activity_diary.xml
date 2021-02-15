@@ -203,6 +203,26 @@
 
       </TableLayout>
 
+    <TextView
+        android:id="@+id/date1"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date2"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:text="Input the date:"/>
+
+    <EditText
+        android:id="@+id/date2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:hint="dd/mm/yyyy"
+        android:layout_above="@+id/Submit"/>
+
+
     <Button
         android:id="@+id/Submit"
         android:layout_width="300dp"

@@ -13,7 +13,6 @@
         <activity android:name=".ui.MeelPlanActivity" />
         <activity android:name=".ui.RegisterActivity" />
         <activity android:name=".ui.OtpActivity" />
-        <activity android:name=".ui.bgActivity" />
         <activity android:name=".ui.MainActivity" />
         <activity android:name=".ui.DiaryActivity">
             <meta-data
