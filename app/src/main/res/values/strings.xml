@@ -1,3 +1,44 @@
 <resources>
     <string name="app_name">Halisi Wellness</string>
+
+    <string-array name="title_articles">
+
+        <item>article1</item>
+        <item>article2</item>
+        <item>article3</item>
+        <item>article4</item>
+        <item>article5</item>
+        <item>article6</item>
+        <item>article7</item>
+        <item>article8</item>
+        <item>article9</item>
+        <item>article10</item>
+        <item>article11</item>
+        <item>article12</item>
+        <item>article13</item>
+        <item>article14</item>
+        <item>article15</item>
+
+    </string-array>
+
+    <string-array name="details_articles">
+
+        <item>article1</item>
+        <item>article2</item>
+        <item>article3</item>
+        <item>article4</item>
+        <item>article5</item>
+        <item>article6</item>
+        <item>article7</item>
+        <item>article8</item>
+        <item>article9</item>
+        <item>article10</item>
+        <item>article11</item>
+        <item>article12</item>
+        <item>article13</item>
+        <item>article14</item>
+        <item>article15</item>
+
+
+    </string-array>
 </resources>
