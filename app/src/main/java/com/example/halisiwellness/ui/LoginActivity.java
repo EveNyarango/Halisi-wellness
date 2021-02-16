@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         ButterKnife.bind(this);
 
 
-<<<<<<< HEAD
+
         mLogonBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,13 +48,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         mLogonBtn.setOnClickListener(this);
 
-=======
-      
+
         mLogonBtn.setOnClickListener(this);
 
         mTextRegister.setOnClickListener(this);
 
->>>>>>> f9ac9936ea512b6240f2372d16b7a22e97dbe206
+
     }
 
     @Override
