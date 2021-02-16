@@ -12,6 +12,8 @@ import android.widget.ImageView;
 
 import com.example.halisiwellness.R;
 
+import java.util.Calendar;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -25,7 +27,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     @BindView(R.id.BlogImageView) ImageView mBlogImageView;
     @BindView(R.id.CalImageView) ImageView mCalImageView;
     @BindView(R.id.DiaryImageView) ImageView mDiaryImageView;
+<<<<<<< HEAD
     @BindView(R.id.homeImageView) ImageView mMeelImageViewView;
+=======
+    @BindView(R.id.MealImageView) ImageView mMealImageView;
+>>>>>>> f9ac9936ea512b6240f2372d16b7a22e97dbe206
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         mBlogImageView.setOnClickListener(this);
         mCalImageView.setOnClickListener(this);
         mDiaryImageView.setOnClickListener(this);
+        mMealImageView.setOnClickListener(this);
     }
 
     @Override
@@ -57,18 +64,25 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             startActivity(intent);
         }
         if(v == mCalImageView) {
-            Intent intent = new Intent(MainActivity.this, ReminderActivity.class);
+            Intent intent = new Intent(MainActivity.this, CalenderActivity.class);
             startActivity(intent);
         }
         if(v == mDiaryImageView) {
             Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
             startActivity(intent);
         }
+<<<<<<< HEAD
         if(v == mMeelImageViewView) {
             Intent intent = new Intent(MainActivity.this, MeelPlanActivity.class);
             startActivity(intent);
         }
 
+=======
+        if(v == mMealImageView) {
+            Intent intent = new Intent(MainActivity.this, MeelPlanActivity.class);
+            startActivity(intent);
+        }
+>>>>>>> f9ac9936ea512b6240f2372d16b7a22e97dbe206
     }
 
     @Override

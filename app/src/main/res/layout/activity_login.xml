@@ -57,6 +57,17 @@
         android:textColorHint="@color/black"
         android:gravity="center_horizontal" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="If you don't have an account create here"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/textRegister"
+        android:layout_below="@id/login_btn"/>
+
 
     <Button
         android:id="@+id/login_btn"
@@ -71,17 +82,6 @@
         android:layout_marginTop="20dp"
         android:padding="10dp"/>
 
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="If you don't have an account create here"
-        android:textSize="10dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textColor="@color/black"
-        android:id="@+id/textRegister"
-        android:layout_below="@id/login_btn"/>
 
 </RelativeLayout>
 

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
+<<<<<<< HEAD
         <activity android:name=".ui.MeelPlanActivity"></activity>
         <activity android:name=".ui.RegisterActivity" />
         <activity android:name=".ui.OtpActivity" />
@@ -37,10 +38,66 @@
         <activity android:name=".ui.DashboardActivity" />
         <activity android:name=".ui.ProfileActivity" />
 
+=======
+    
+
+        <activity android:name=".ui.MeelPlanActivity"></activity>
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.OtpActivity" />
+
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.CalenderActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+
+        <activity android:name=".ui.DiaryActivity" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+        <activity android:name=".ui.ReminderActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
 
 
 
+        <activity android:name=".ui.ChatBoxActivity" />
 
+        <activity android:name=".ui.LoginActivity" >
+
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+>>>>>>> f9ac9936ea512b6240f2372d16b7a22e97dbe206
+
+
+
+<<<<<<< HEAD
+
+=======
+        <activity android:name=".ui.ArticlesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+        <activity android:name=".ui.AppointmentActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+        <activity android:name=".ui.DashboardActivity" />
+        <activity android:name=".ui.ProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+>>>>>>> f9ac9936ea512b6240f2372d16b7a22e97dbe206
 
     </application>
 </manifest>
