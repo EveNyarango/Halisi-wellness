@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
-        <activity android:name=".ui.CalenderActivity"></activity>
+        <activity android:name=".ui.ProfActivity"></activity>
+        <activity android:name=".ui.CalenderActivity" />
         <activity android:name=".ui.MeelPlanActivity" />
         <activity android:name=".ui.RegisterActivity" />
         <activity android:name=".ui.OtpActivity" />
