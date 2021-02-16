@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
+    
 
         <activity android:name=".ui.MeelPlanActivity"></activity>
         <activity android:name=".ui.RegisterActivity" />
@@ -17,13 +18,12 @@
         <activity android:name=".ui.MainActivity" />
 
         <activity android:name=".ui.DiaryActivity" >
+
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
-
-
-        <activity android:name=".ui.ReminderActivity" >
+        <activity android:name=".ui.ReminderActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
@@ -36,12 +36,14 @@
         <activity android:name=".ui.LoginActivity" >
 
 
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
 
         <activity android:name=".ui.ArticlesActivity" >
             <meta-data
@@ -53,15 +55,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
-
         <activity android:name=".ui.DashboardActivity" />
-
-        <activity android:name=".ui.ProfileActivity" >
+        <activity android:name=".ui.ProfileActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
-
+<
     </application>
 
 </manifest>
