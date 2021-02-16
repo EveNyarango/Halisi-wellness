@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.MainActivity">
 
@@ -11,7 +12,133 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+   
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:background="#098765"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="30dp">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/cityEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:hint="City"-->
+<!--            android:nextFocusDown="@+id/passwordEditText"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textColorHint="@color/colorPrimaryDark"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/patientEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:hint="Patient's name"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:nextFocusDown="@+id/passwordEditText"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textColorHint="@color/colorPrimaryDark"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/doctorEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:hint="Doctor's name"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:nextFocusDown="@+id/passwordEditText"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textColorHint="@color/colorPrimaryDark"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/dateEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:hint="Date"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:nextFocusDown="@+id/passwordEditText"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textColorHint="@color/colorPrimaryDark"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/timeEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:hint="Time"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:nextFocusDown="@+id/passwordEditText"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textColorHint="@color/colorPrimaryDark"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/purposeEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:background="@android:color/white"-->
+<!--            android:hint="Agenda"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:nextFocusDown="@+id/passwordEditText"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textColorHint="@color/colorPrimaryDark"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/createUserButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="41dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:background="@color/colorPrimaryDark"-->
+<!--            android:ems="@android:integer/status_bar_notification_info_maxnum"-->
+<!--            android:gravity="center"-->
+<!--            android:minEms="@android:integer/config_longAnimTime"-->
+<!--            android:padding="10dp"-->
+<!--            android:textSize="20sp"-->
+<!--            android:text="Submit"-->
+<!--            android:textColor="@color/design_default_color_background" />-->
+
+
 </ListView>
 
+
+
+
+
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/linearLayout"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Wellness Appointment"-->
+<!--        android:textColor="@color/colorTextIcons"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textStyle="bold" />-->
 </RelativeLayout>
 

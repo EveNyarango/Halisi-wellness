@@ -27,18 +27,18 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
 
-<!--        1st name-->
-    <TextView
-        android:id="@+id/name1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="First Name:"
-        android:textStyle="bold"
-        android:textSize="14sp" />
+        <!--        1st name-->
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="First Name:"
+            android:textStyle="bold"
+            android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/firstname"
+            android:id="@+id/Firstname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="first name"
@@ -46,7 +46,7 @@
             android:padding="10dp"
             />
 
-<!--        2nd name-->
+        <!--        2nd name-->
         <TextView
             android:id="@+id/name2"
             android:layout_width="match_parent"
@@ -56,7 +56,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/secondname"
+            android:id="@+id/Secondname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="second name"
@@ -64,7 +64,7 @@
             android:padding="10dp"
             />
 
-<!--        D.O.B-->
+        <!--        D.O.B-->
         <TextView
             android:id="@+id/birth"
             android:layout_width="match_parent"
@@ -74,15 +74,15 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/birth2"
+            android:id="@+id/Birth2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="dd/mm/yyyy"
+            android:hint="Select Date"
             android:textColor="@color/colorAccent"
             android:padding="10dp"
             />
 
-<!--        phone number-->
+        <!--        phone number-->
         <TextView
             android:id="@+id/number"
             android:layout_width="match_parent"
@@ -92,14 +92,14 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/number2"
+            android:id="@+id/Number2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="+254"
             android:padding="10dp"
             />
 
-<!--        weight-->
+        <!--        weight-->
         <TextView
             android:id="@+id/weight"
             android:layout_width="match_parent"
@@ -109,14 +109,14 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/weight2"
+            android:id="@+id/Weight2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Kgs"
             android:padding="10dp"
             />
 
-<!--        height-->
+        <!--        height-->
         <TextView
             android:id="@+id/height"
             android:layout_width="match_parent"
@@ -126,7 +126,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/height2"
+            android:id="@+id/Height2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="metres"
@@ -134,12 +134,20 @@
             />
 
         <Button
+            android:id="@+id/BtnProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimaryAccent"
             android:text="Submit"
-            android:layout_margin="30dp"
-            android:textColor="@color/white"
-            />
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/BtnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:text="Save"
+            android:textColor="@color/white" />
     </LinearLayout>
 </RelativeLayout>

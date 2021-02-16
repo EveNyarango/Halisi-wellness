@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MeelPlanActivity">
+
+
+    <TextView
+
+        android:layout_marginLeft="50dp"
+        android:id="@+id/highFibre"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/highfibre"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:text="High Fiber"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowColor="#00ff00"
+        android:shadowRadius="4"
+
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/lowChorestrarol"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/highFibre"
+        android:background="@drawable/lowcholestrarol"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:text="Low Cholesterol"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowColor="#00ff00"
+        android:shadowRadius="4"
+
+        android:textStyle="bold" />
+
+
+    <TextView
+
+        android:layout_marginLeft="50dp"
+        android:id="@+id/glutenFree"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/glutefree"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:text="Gluten Free"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowColor="#00ff00"
+        android:shadowRadius="4"
+
+        android:textStyle="bold"
+        android:layout_below="@+id/highFibre"/>
+
+
+
+    <TextView
+        android:id="@+id/looseWeight"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/glutenFree"
+        android:background="@drawable/looseweight"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:text="Loose Weight"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowColor="#00ff00"
+        android:shadowRadius="4"
+        android:textStyle="bold"
+        android:layout_below="@+id/lowChorestrarol"/>
+
+
+    <TextView
+
+        android:layout_marginLeft="50dp"
+        android:id="@+id/pregenancyMeal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/pregnancy"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:text="Pregnancy Meal Plan"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowColor="#00ff00"
+        android:shadowRadius="4"
+
+        android:textStyle="bold"
+        android:layout_below="@+id/glutenFree"/>
+
+
+    <TextView
+        android:id="@+id/healthyKids"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/pregenancyMeal"
+        android:background="@drawable/healthykids"
+        android:gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:text="Healthy Kids"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="4"
+        android:shadowColor="#00ff00"
+        android:shadowRadius="4"
+        android:textStyle="bold"
+        android:layout_below="@+id/looseWeight"/>
+
+</RelativeLayout>
