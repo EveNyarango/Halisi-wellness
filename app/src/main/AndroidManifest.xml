@@ -34,7 +34,7 @@
 
         <activity android:name=".ui.ReminderActivity" />
         <activity android:name=".ui.MainActivity" />
-        <activity android:name=".ui.LoginActivity">
+
 
 
 
@@ -53,7 +53,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ChatBoxActivity" />
+
         <activity android:name=".ui.ArticlesActivity" />
         <activity android:name=".ui.AppointmentActivity" />
         <activity android:name=".ui.DashboardActivity" />
