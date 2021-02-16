@@ -29,10 +29,30 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         ButterKnife.bind(this);
 
 
-      
+
+        mLogonBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mTextRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mLogonBtn.setOnClickListener(this);
+
+
         mLogonBtn.setOnClickListener(this);
 
         mTextRegister.setOnClickListener(this);
+
 
     }
 

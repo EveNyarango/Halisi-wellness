@@ -21,6 +21,7 @@
         android:layout_marginTop="300dp"
         android:textColor="@color/black"
         android:textAlignment="center"
+
         android:gravity="center_horizontal" />
 
 
@@ -29,14 +30,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/register_head"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:padding="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:hint="enter your name"
+        android:hint="enter your username"
         android:textAlignment="center"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
+        android:background="@drawable/border"
         android:gravity="center_horizontal" />
 
     <EditText
@@ -45,14 +47,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/register_name"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:padding="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:hint="enter your number"
         android:textAlignment="center"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
+        android:background="@drawable/border"
         android:gravity="center_horizontal" />
 
 
@@ -61,15 +64,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/register_phone"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:padding="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:hint="enter your password"
         android:textAlignment="center"
-        android:textColorHint="@color/black"
+        android:textColorHint="@color/white"
         android:inputType="textPassword"
+        android:background="@drawable/border"
         android:gravity="center_horizontal" />
 
     <Button
