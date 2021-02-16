@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-<<<<<<< HEAD
+
         mLogonBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,9 +40,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
             }
         });
-=======
+
         mLogonBtn.setOnClickListener(this);
->>>>>>> 24b25e4bf76526b16ddf64e9beb84178712e02f2
+
     }
 
     @Override
