@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
 
-        <activity android:name=".ui.ProfActivity"></activity>
+
+     
         <activity android:name=".ui.CalenderActivity" />
         <activity android:name=".ui.MeelPlanActivity" />
 
@@ -35,6 +36,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
+
 
 
 
