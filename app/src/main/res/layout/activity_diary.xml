@@ -102,6 +102,7 @@
 
 
               <EditText
+                  android:id="@+id/breakfast"
                   android:layout_width="0dp"
                   android:layout_height="wrap_content"
                   android:padding="10sp"
@@ -138,6 +139,7 @@
                   android:src="@drawable/lunch" />
 
               <EditText
+                  android:id="@+id/lunchy"
                   android:layout_width="0dp"
                   android:layout_height="wrap_content"
                   android:hint="Enter Meal"
@@ -175,6 +177,7 @@
                   android:src="@drawable/snacks" />
 
               <EditText
+                  android:id="@+id/snacky"
                   android:layout_width="0dp"
                   android:layout_height="wrap_content"
                   android:hint="Enter snacks"
@@ -211,6 +214,7 @@
                   android:src="@drawable/sapa" />
 
               <EditText
+                  android:id="@+id/supper"
                   android:layout_width="0dp"
                   android:layout_height="wrap_content"
                   android:hint="Enter meal"
@@ -244,7 +248,7 @@
 
 
     <Button
-        android:id="@+id/Submit"
+        android:id="@+id/btnDiary"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Submit"
