@@ -17,7 +17,7 @@
             android:text="text"
             android:textColor="@color/colorPrimaryDark"
             android:gravity="center"
-            android:textSize="30sp"
+            android:textSize="23sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 

@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
-        <activity android:name=".ui.MainActivity2"></activity>
         <activity android:name=".ui.bgActivity" />
         <activity android:name=".ui.DiaryActivity" />
         <activity android:name=".ui.OtpActivity" />
@@ -21,13 +20,23 @@
         <activity android:name=".ui.AppointmentActivity" />
         <activity android:name=".ui.DashboardActivity" />
         <activity android:name=".ui.ProfileActivity" />
+        <activity android:name=".ui.MainActivity2" />
         <activity android:name=".ui.MainActivity">
+
+        </activity>
+
+        <activity android:name=".AnimActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
