@@ -6,14 +6,14 @@ import android.widget.TextView;
 
 import com.example.halisiwellness.R;
 
-public class HighFibreMealViewHolder {
+public class MealsPLanViewHolder {
 
     public ImageView mealImage;
     public TextView mMealName;
     public TextView mMealDay;
     public TextView mMealDescription;
 
-    public HighFibreMealViewHolder(View view){
+    public MealsPLanViewHolder(View view){
 
         mealImage = view.findViewById(R.id.MealImageView);
         mMealDescription =view.findViewById(R.id.Description);

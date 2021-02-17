@@ -11,11 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.halisiwellness.R;
-import com.example.halisiwellness.ui.HighFibreMeal;
 
-import viewholder.HighFibreMealViewHolder;
+import viewholder.MealsPLanViewHolder;
 
-public class HighFibreAdapter extends ArrayAdapter<String> {
+public class MealsPlanAdapter extends ArrayAdapter<String> {
     Context mContext;
     int[] mImages;
     String[] mMealsName;
@@ -32,7 +31,7 @@ public class HighFibreAdapter extends ArrayAdapter<String> {
 //
 //    }
 
-    public HighFibreAdapter(Context mContext, String[] mMealsName, String[] mMealsDescription, int[] mMealsImages, String[] mMealsDays) {
+    public MealsPlanAdapter(Context mContext, String[] mMealsName, String[] mMealsDescription, int[] mMealsImages, String[] mMealsDays) {
         super(mContext, R.layout.meal_item,R.id.meals,mMealsName);
         this.mContext = mContext;
         this.mMealsName = mMealsName;
@@ -47,16 +46,16 @@ public class HighFibreAdapter extends ArrayAdapter<String> {
 
         View singleItem = convertView;
 
-        HighFibreMealViewHolder holder = null;
+        MealsPLanViewHolder holder = null;
         if (singleItem == null) {
             LayoutInflater layoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             singleItem = layoutInflater.inflate(R.layout.meal_item, parent, false);
-            holder = new HighFibreMealViewHolder(singleItem);
+            holder = new MealsPLanViewHolder(singleItem);
             singleItem.setTag(holder);
         }
 
         else {
-            holder = (HighFibreMealViewHolder) singleItem.getTag();
+            holder = (MealsPLanViewHolder) singleItem.getTag();
         }
 
         holder.mealImage.setImageResource(mImages[position]);

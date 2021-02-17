@@ -54,7 +54,7 @@ public class MeelPlanActivity extends AppCompatActivity {
         mPregnancyMeal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MeelPlanActivity.this,PregrancyMeal.class);
+                Intent intent = new Intent(MeelPlanActivity.this, PregnancyMeal.class);
                 startActivity(intent);
             }
         });

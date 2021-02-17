@@ -47,9 +47,4 @@ Among human T-cell leukemia virus type 1-infected patients, those who were admin
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-<<<<<<< HEAD
-    <string name="password_hint">enter your password</string>
-=======
-
->>>>>>> 3932bd286224c2e60bbc3d62ff328cb932c927fd
 </resources>

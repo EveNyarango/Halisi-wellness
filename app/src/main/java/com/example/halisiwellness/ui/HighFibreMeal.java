@@ -7,7 +7,7 @@ import android.widget.ListView;
 
 import com.example.halisiwellness.R;
 
-import adapter.HighFibreAdapter;
+import adapter.MealsPlanAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -27,7 +27,7 @@ public class HighFibreMeal extends AppCompatActivity {
         setContentView(R.layout.activity_high_fibre_meal);
         ButterKnife.bind(this);
 
-        HighFibreAdapter highFibreAdapter = new HighFibreAdapter(this, mMealsName,mMealsDescription,mMealsImages,mMealsDays);
-        mHighFibreListView.setAdapter(highFibreAdapter);
+        MealsPlanAdapter mealsPlanAdapter = new MealsPlanAdapter(this, mMealsName,mMealsDescription,mMealsImages,mMealsDays);
+        mHighFibreListView.setAdapter(mealsPlanAdapter);
     }
 }
