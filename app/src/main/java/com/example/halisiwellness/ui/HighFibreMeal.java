@@ -19,7 +19,7 @@ public class HighFibreMeal extends AppCompatActivity {
     String[]  mMealsDescription = {"This vegan minestrone soup is heavy on the green vegetables (it has peas, zucchini and kale, to name a few!), setting this quick healthy soup","Chicken Parm gets a fun low-carb and gluten-free twist with these cheesy stuffed peppers with chicken and quinoa.","spinach and artichoke dip, this creamy pasta is for you. And here's what's almost as good as the flavor of this comforting dish: the fact that this healthy dinner takes just 20 minutes to prepare.","chickpea-flour dumplings with chiles and greens. Serve with naan to sop up the sauce for a healthy vegetarian dinner with plenty of protein.","Mediterranean stew is a healthy dinner chock-full of vegetables and hearty chickpeas. A drizzle of olive oil to finish carries the flavors of this easy vegan crock-pot stew."};
     String[]  mMealsDays = {"Day 1","Day 2","Day 3","Day 4","Day 5"};
 
-    int[]  mMealsImages = {R.drawable.meals,R.drawable.meals,R.drawable.meals,R.drawable.meals,R.drawable.meals,};
+    int[]  mMealsImages = {R.drawable.looseweight,R.drawable.healthykids,R.drawable.pregnancy,R.drawable.healthykids,R.drawable.glutefree,};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

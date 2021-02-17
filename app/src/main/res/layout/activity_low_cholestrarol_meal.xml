@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.LowCholestrarolMeal">
 
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low Cholestrarol 5 Day Meal Plan"
+        android:textSize="20dp"
+        android:textColor="#00ff00"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        />
 
     <ListView
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
         android:id="@+id/lowChorestrarolMealListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -15,4 +30,4 @@
     </ListView>
 
 
-</LinearLayout>
+</RelativeLayout>
