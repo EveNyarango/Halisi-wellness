@@ -61,7 +61,7 @@ public class MeelPlanActivity extends AppCompatActivity {
         mHealthyKids.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MeelPlanActivity.this,HeaktyKidsMeal.class);
+                Intent intent =new Intent(MeelPlanActivity.this, HealthyKidsMeal.class);
                 startActivity(intent);
             }
         });

@@ -13,7 +13,7 @@
         <activity android:name=".ui.LowCholestrarolMeal"></activity>
         <activity android:name=".ui.GlutenFreeMeal" />
         <activity android:name=".ui.LooseWeight" />
-        <activity android:name=".ui.HeaktyKidsMeal" />
+        <activity android:name=".ui.HealthyKidsMeal" />
         <activity android:name=".ui.PregrancyMeal" />
         <activity android:name=".ui.HighFibreMeal" />
         <activity android:name=".ui.MeelPlanActivity" />

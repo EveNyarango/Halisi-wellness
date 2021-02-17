@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.halisiwellness.R;
 
-public class HeaktyKidsMeal extends AppCompatActivity {
+public class HealthyKidsMeal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
