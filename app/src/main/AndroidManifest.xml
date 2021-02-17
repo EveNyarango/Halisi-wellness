@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
+
         <activity android:name=".ui.LowCholestrarolMeal"></activity>
         <activity android:name=".ui.GlutenFreeMeal" />
         <activity android:name=".ui.LooseWeight" />
@@ -17,6 +18,12 @@
         <activity android:name=".ui.PregrancyMeal" />
         <activity android:name=".ui.HighFibreMeal" />
         <activity android:name=".ui.MeelPlanActivity" />
+
+
+
+     
+        
+
         <activity android:name=".ui.RegisterActivity" />
         <activity android:name=".ui.OtpActivity" />
         <activity android:name=".ui.DiaryActivity">
@@ -24,16 +31,29 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
+
         <activity android:name=".ui.ReminderActivity" />
         <activity android:name=".ui.MainActivity" />
-        <activity android:name=".ui.LoginActivity">
+
+
+
+
+
+
+        <activity android:name=".ui.ChatBoxActivity" />
+
+        <activity android:name=".ui.LoginActivity" >
+
+
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ChatBoxActivity" />
+
         <activity android:name=".ui.ArticlesActivity" />
         <activity android:name=".ui.AppointmentActivity" />
         <activity android:name=".ui.DashboardActivity" />
