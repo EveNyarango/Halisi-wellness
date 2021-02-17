@@ -138,9 +138,6 @@
             android:textColor="@color/colorTextIcons"
             android:textSize="15sp" />
 
-
-
-
-
     </LinearLayout>
+
 </RelativeLayout>
