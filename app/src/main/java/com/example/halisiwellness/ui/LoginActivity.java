@@ -16,10 +16,9 @@ import butterknife.ButterKnife;
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    @BindView(R.id.login_btn)
-    Button mLogonBtn;
-    @BindView(R.id.textRegister)
-    TextView mTextRegister;
+    @BindView(R.id.login_btn) Button mLogonBtn;
+    @BindView(R.id.textRegister) TextView mTextRegister;
+
 
 
     @Override
@@ -45,6 +44,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 startActivity(intent);
             }
         });
+
+
+
 
         mLogonBtn.setOnClickListener(this);
 

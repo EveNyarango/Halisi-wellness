@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.PregnancyMeal">
+    tools:context=".ui.HealthyKidsMeal">
 
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregnancy Meal 5 Day Meal Plan"
+        android:text="Healthy Kids 5 Day Meal Plan"
         android:textSize="20dp"
         android:textColor="#00ff00"
         android:layout_marginBottom="20dp"
@@ -25,7 +25,7 @@
     <ListView
         android:layout_below="@+id/title"
         android:layout_marginTop="20dp"
-        android:id="@+id/pregnancyMealListView"
+        android:id="@+id/healthyKidsListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
