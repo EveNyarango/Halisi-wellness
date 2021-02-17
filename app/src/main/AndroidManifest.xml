@@ -18,6 +18,7 @@
         <activity android:name=".ui.PregrancyMeal" />
         <activity android:name=".ui.HighFibreMeal" />
         <activity android:name=".ui.MeelPlanActivity" />
+        <activity android:name=".ui.MainActivity2" />
 
 
 

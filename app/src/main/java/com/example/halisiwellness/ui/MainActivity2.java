@@ -17,8 +17,8 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
         textView = findViewById(R.id.txt);
-       String dArticles = getIntent().getStringExtra("articles");
+        String dArticles = getIntent().getStringExtra("articles");
 
-       textView.setText(dArticles);
+        textView.setText(dArticles);
     }
 }
