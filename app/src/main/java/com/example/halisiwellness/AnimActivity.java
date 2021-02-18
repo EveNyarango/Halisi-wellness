@@ -65,7 +65,7 @@ public class AnimActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent (AnimActivity.this, MainActivity.class);
+                Intent intent = new Intent (AnimActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
 
