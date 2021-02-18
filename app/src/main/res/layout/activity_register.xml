@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:text="Create Your Account Here"
         android:textSize="30dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="200dp"
         android:textColor="@color/black"
         android:textAlignment="center"
 
@@ -36,6 +36,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         android:hint="enter your username"
+        android:drawableRight="@drawable/ic_baseline_person_24"
         android:textAlignment="center"
         android:textColorHint="@color/white"
         android:background="@drawable/border"
@@ -52,29 +53,56 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:hint="enter your number"
+        android:hint="enter your email"
+        android:drawableRight="@drawable/ic_baseline_email_24"
         android:textAlignment="center"
         android:textColorHint="@color/white"
         android:background="@drawable/border"
         android:gravity="center_horizontal" />
 
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/register_password"
+        app:passwordToggleEnabled="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/register_phone"
-        android:textColor="@color/white"
-        android:padding="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:hint="enter your password"
-        android:textAlignment="center"
-        android:textColorHint="@color/white"
-        android:inputType="textPassword"
-        android:background="@drawable/border"
-        android:gravity="center_horizontal" />
+        android:layout_below="@+id/register_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="enter yor password"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirm_password"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="confirm yor password"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/register_btn"
@@ -83,7 +111,7 @@
         android:text="REGISTER NOW"
         android:textColor="@color/white"
         android:background="#FFFFFF"
-        android:layout_below="@id/register_password"
+        android:layout_below="@id/confirm_password"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"
