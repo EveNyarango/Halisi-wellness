@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     @BindView(R.id.DiaryImageView) ImageView mDiaryImageView;
     @BindView(R.id.MealImageView) ImageView mMealImageView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,10 +68,15 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
             startActivity(intent);
         }
+
+
+
+
         if(v == mMealImageView) {
             Intent intent = new Intent(MainActivity.this, MeelPlanActivity.class);
             startActivity(intent);
         }
+
     }
 
     @Override
