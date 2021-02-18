@@ -119,7 +119,6 @@
             <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="com.example.halisiwellness.ui.MainActivity" /></activity>
-        <activity android:name=".ui.DashboardActivity"></activity>
 
         <activity android:name=".ui.ProfileActivity" >
             <meta-data
