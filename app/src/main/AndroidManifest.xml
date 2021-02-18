@@ -46,11 +46,8 @@
         
         
         <activity android:name=".ui.MainActivity2" />
-        <activity android:name=".ui.MainActivity">
 
-        </activity>
-
-        <activity android:name=".AnimActivity">
+        <activity android:name=".AnimActivity"></activity>
 
 
         <activity android:name=".ui.LoginActivity" >
