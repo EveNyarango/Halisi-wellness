@@ -67,7 +67,7 @@
           <TableRow
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/border">
+              android:background="@drawable/border1">
 
               <TextView
                   android:layout_width="0dp"
@@ -106,7 +106,7 @@
           <TableRow
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/border">
+              android:background="@drawable/border1">
 
               <TextView
                   android:layout_width="0dp"
@@ -145,7 +145,7 @@
           <TableRow
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/border">
+              android:background="@drawable/border1">
 
               <TextView
                   android:layout_width="0dp"
@@ -181,7 +181,7 @@
           <TableRow
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:background="@drawable/border">
+              android:background="@drawable/border1">
 
               <TextView
                   android:layout_width="0dp"

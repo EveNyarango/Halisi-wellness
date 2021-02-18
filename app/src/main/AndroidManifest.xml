@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
 
-        <activity android:name=".ui.Diary2Activity"></activity>
+        <activity android:name=".ui.FoodActivity"></activity>
         <activity android:name=".ui.ProfActivity" />
       
 
