@@ -133,13 +133,6 @@
             android:padding="10dp"
             />
 
-        <Button
-            android:id="@+id/BtnProfile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryAccent"
-            android:text="Submit"
-            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/BtnSave"

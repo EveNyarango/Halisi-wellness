@@ -20,13 +20,13 @@ import com.example.halisiwellness.R;
 
 import java.util.Calendar;
 
-public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
+public class ProfileActivity extends AppCompatActivity {
     private static final  String TAG = "ProfileActivity";
     private EditText mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
 
     EditText Firstname,  Secondname, Birth2, Number2, Weight2, Height2;
-    Button BtnProfile, BtnSave;
+    Button  BtnSave;
     SharedPreferences sp;
     String FirstnameStr, SecondnameStr, Birth2Str, Number2Str, Weight2Str, Height2Str;
 
@@ -44,7 +44,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         Number2 = findViewById(R.id.Number2);
         Weight2 = findViewById(R.id.Weight2);
         Height2 = findViewById(R.id.Height2);
-        BtnProfile = findViewById(R.id.BtnProfile);
         BtnSave = findViewById(R.id.BtnSave);
         sp = getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
 
@@ -82,38 +81,44 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             }
         };
 
-        BtnSave.setOnClickListener(this);
-        BtnProfile.setOnClickListener(this);
-    }
 
-    @Override
-    public void onClick(View view) {
-FirstnameStr = Firstname.getText().toString();
-SecondnameStr = Secondname.getText().toString();
-        Birth2Str = Birth2.getText().toString();
-        Number2Str = Number2.getText().toString();
-        Weight2Str = Weight2.getText().toString();
-        Height2Str = Height2.getText().toString();
 
-        SharedPreferences.Editor editor = sp.edit();
+//        BtnSave.setOnClickListener(this);
 
-        editor.putString("Firstname", FirstnameStr);
-        editor.putString("Secondname", SecondnameStr);
-        editor.putString("Birth2", Birth2Str);
-        editor.putString("Number2", Number2Str);
-        editor.putString("Weight2", Weight2Str);
-        editor.putString("Height2", Height2Str);
+        BtnSave.setOnClickListener(new View.OnClickListener() {
 
-        editor.commit();
+            @Override
+            public void onClick(View view) {
+                FirstnameStr = Firstname.getText().toString();
+                SecondnameStr = Secondname.getText().toString();
+                Birth2Str = Birth2.getText().toString();
+                Number2Str = Number2.getText().toString();
+                Weight2Str = Weight2.getText().toString();
+                Height2Str = Height2.getText().toString();
 
-//        Toast.makeText(ProfileActivity.this, "Successfully  created a profile", Toast.LENGTH_SHORT).show();
+                SharedPreferences.Editor editor = sp.edit();
 
-        if(view == BtnSave) {
-            Intent intent = new Intent(ProfileActivity.this, ProfActivity.class);
-            startActivity(intent);
+                editor.putString("Firstname", FirstnameStr);
+                editor.putString("Secondname", SecondnameStr);
+                editor.putString("Birth2", Birth2Str);
+                editor.putString("Number2", Number2Str);
+                editor.putString("Weight2", Weight2Str);
+                editor.putString("Height2", Height2Str);
 
-//            Toast.makeText(ProfileActivity.this, "Successfully  saved a profile", Toast.LENGTH_SHORT).show();
+                editor.commit();
+
+                Toast.makeText(ProfileActivity.this, "Successfully  created a profile", Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(ProfileActivity.this, ProfActivity.class);
+                    startActivity(intent);
+
+
+
+
+            }
+        });
         }
 
     }
-}
+
+

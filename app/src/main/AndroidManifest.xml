@@ -11,8 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
 
+        <activity android:name=".ui.Diary2Activity"></activity>
+        <activity android:name=".ui.ProfActivity" />
       
-
 
         <activity android:name=".ui.LowCholestrarolMeal"></activity>
         <activity android:name=".ui.GlutenFreeMeal" />
@@ -20,6 +21,7 @@
         <activity android:name=".ui.HealthyKidsMeal" />
         <activity android:name=".ui.PregnancyMeal" />
         <activity android:name=".ui.HighFibreMeal" />
+
         <activity android:name=".ui.MeelPlanActivity" />
 
         <activity android:name=".ui.RegisterActivity" />
