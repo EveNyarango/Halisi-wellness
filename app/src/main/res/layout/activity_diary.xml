@@ -6,20 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.DiaryActivity">
 
-<!--    <ImageView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="270dp"-->
-<!--        android:background="@drawable/ic_wave_6"/>-->
 
-<!--    <ImageView-->
-<!--        android:id="@+id/food"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="130dp"-->
-<!--        android:layout_alignParentRight="true"-->
-<!--        android:layout_centerHorizontal="true"-->
-<!--        android:paddingBottom="50dp"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:src="@drawable/food" />-->
 
     <Button
         android:id="@+id/button_btnDate"
@@ -229,24 +216,6 @@
 
       </TableLayout>
 
-<!--    <TextView-->
-<!--        android:id="@+id/date1"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:padding="5dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_above="@+id/date2"-->
-<!--        android:layout_marginBottom="30dp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:text="Input the date:"/>-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/date2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginBottom="20dp"-->
-<!--        android:padding="5dp"-->
-<!--        android:hint="dd/mm/yyyy"-->
-<!--        android:layout_above="@+id/Submit"/>-->
 
 
     <Button
