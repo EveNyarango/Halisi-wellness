@@ -8,7 +8,6 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -57,7 +56,7 @@ public class DiaryActivity extends AppCompatActivity {
         String breaky = sharedPreferences.getString(KEY_BREAKY, null);
 
         if(breaky !=null){
-            Intent intent = new Intent(DiaryActivity.this, Diary2Activity.class);
+            Intent intent = new Intent(DiaryActivity.this, FoodActivity.class);
             startActivity(intent);
         }
 
@@ -105,7 +104,7 @@ public class DiaryActivity extends AppCompatActivity {
                 editor.putString(KEY_SAPA, editText_supper.getText().toString());
                 editor.putString(KEY_DATE, button_btnDate.getText().toString());
                 editor.apply();
-                Intent intent = new Intent(DiaryActivity.this, Diary2Activity.class);
+                Intent intent = new Intent(DiaryActivity.this, FoodActivity.class);
                 startActivity(intent);
 
                 Toast.makeText(DiaryActivity.this, "Food Diary updated successfully", Toast.LENGTH_SHORT).show();

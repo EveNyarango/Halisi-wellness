@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.example.halisiwellness.R;
 
-public class Diary2Activity extends AppCompatActivity {
+public class FoodActivity extends AppCompatActivity {
 
     TextView textView_breakfast2, textView_lunchy2, textView_snacky2, textView_sapa2, textView_Date;
     Button button_btnBack;
@@ -29,7 +29,7 @@ public class Diary2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diary2);
+        setContentView(R.layout.activity_food);
 
         textView_breakfast2 = findViewById(R.id.textView_breakfast2);
         textView_lunchy2 = findViewById(R.id.textView_lunchy2);
@@ -60,7 +60,7 @@ button_btnBack.setOnClickListener(new View.OnClickListener() {
         editor.clear();
         editor.commit();
         finish();
-        Toast.makeText(Diary2Activity.this, "Good. Keep Tracking", Toast.LENGTH_SHORT).show();
+        Toast.makeText(FoodActivity.this, "Good. Keep Tracking", Toast.LENGTH_SHORT).show();
     }
 });
 
