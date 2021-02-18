@@ -11,20 +11,60 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
 
-        <activity android:name=".ui.LowCholestrarolMeal"></activity>
-        <activity android:name=".ui.GlutenFreeMeal" />
-        <activity android:name=".ui.LooseWeight" />
-        <activity android:name=".ui.HealthyKidsMeal" />
-        <activity android:name=".ui.PregnancyMeal" />
-        <activity android:name=".ui.HighFibreMeal" />
-        <activity android:name=".ui.MeelPlanActivity" />
 
+        <activity android:name=".ui.ProfActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+      
 
+        <activity android:name=".ui.LowCholestrarolMeal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
 
-     
-        
+        <activity android:name=".ui.GlutenFreeMeal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
 
-        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".ui.LooseWeight">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+        <activity android:name=".ui.HealthyKidsMeal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+        <activity android:name=".ui.PregnancyMeal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+
+        <activity android:name=".ui.HighFibreMeal" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+
+        <activity android:name=".ui.MeelPlanActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+
+        <activity android:name=".ui.RegisterActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+
         <activity android:name=".ui.OtpActivity" />
         <activity android:name=".ui.DiaryActivity">
             <meta-data
@@ -32,21 +72,19 @@
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
 
-        <activity android:name=".ui.ReminderActivity" />
+        <activity android:name=".ui.ReminderActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+
         <activity android:name=".ui.MainActivity" />
-
-
-
-
-
 
         <activity android:name=".ui.ChatBoxActivity" />
 
-        <activity android:name=".ui.LoginActivity" >
+        <activity android:name=".ui.MainActivity2" />
 
-
-
-
+        <activity android:name=".AnimActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -54,15 +92,45 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.ArticlesActivity" />
-        <activity android:name=".ui.AppointmentActivity" />
-        <activity android:name=".ui.DashboardActivity" />
-        <activity android:name=".ui.ProfileActivity" />
+
+        <activity android:name=".ui.FoodActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+
+
+        <activity android:name=".ui.LoginActivity" >
+
+
+        </activity>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <activity android:name=".ui.ArticlesActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
+
+        <activity android:name=".ui.AppointmentActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.halisiwellness.ui.MainActivity" /></activity>
+
+        <activity android:name=".ui.ProfileActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" />
+        </activity>
         <activity android:name=".ui.CalenderActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
+
     </application>
 
 </manifest>

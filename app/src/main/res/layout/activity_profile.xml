@@ -42,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="first name"
+            android:background="@drawable/border1"
             android:textColor="@color/colorAccent"
             android:padding="10dp"
             />
@@ -60,6 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="second name"
+            android:background="@drawable/border1"
             android:textColor="@color/colorAccent"
             android:padding="10dp"
             />
@@ -78,6 +80,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Select Date"
+            android:background="@drawable/border1"
             android:textColor="@color/colorAccent"
             android:padding="10dp"
             />
@@ -96,6 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="+254"
+            android:background="@drawable/border1"
             android:padding="10dp"
             />
 
@@ -112,6 +116,7 @@
             android:id="@+id/Weight2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/border1"
             android:hint="Kgs"
             android:padding="10dp"
             />
@@ -130,16 +135,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="metres"
+            android:background="@drawable/border1"
             android:padding="10dp"
             />
 
-        <Button
-            android:id="@+id/BtnProfile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryAccent"
-            android:text="Submit"
-            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/BtnSave"
