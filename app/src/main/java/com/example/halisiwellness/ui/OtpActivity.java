@@ -109,7 +109,7 @@ public class OtpActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // if the code is correct and the task is successful
                             // we are sending our user to new activity.
-                            Intent i = new Intent(OtpActivity.this, LoginActivity.class);
+                            Intent i = new Intent(OtpActivity.this, MainActivity.class);
                             startActivity(i);
                             finish();
                         } else {

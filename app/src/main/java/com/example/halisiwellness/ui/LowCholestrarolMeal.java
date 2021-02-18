@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.halisiwellness.R;
 
-public class bgActivity extends AppCompatActivity {
+public class LowCholestrarolMeal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bg2);
+        setContentView(R.layout.activity_low_cholestrarol_meal);
     }
 }

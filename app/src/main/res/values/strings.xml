@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Halisi Wellness</string>
 
+
     <string-array name="title_articles">
 
         <item>Ficus pumila L. improves the prognosis of patients infected with HTLV-1, an RNA virus</item>
@@ -47,4 +48,8 @@
 
 
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
