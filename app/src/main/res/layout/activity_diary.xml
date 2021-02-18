@@ -22,9 +22,9 @@
 <!--        android:src="@drawable/food" />-->
 
     <Button
+        android:id="@+id/button_btnDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_centerHorizontal="true"
         android:text="Choose Date"
         android:textColor="@color/white"
