@@ -3,6 +3,8 @@ package com.example.halisiwellness.ui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.ListView;
 
 import com.example.halisiwellness.R;
@@ -31,4 +33,11 @@ public class LowCholestrarolMeal extends AppCompatActivity {
         MealsPlanAdapter mealsPlanAdapter = new MealsPlanAdapter(this, mMealsName,mMealsDescription,mMealsImages,mMealsDays);
         mLowCholestrarolMeal.setAdapter(mealsPlanAdapter);
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
 }
