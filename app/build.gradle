@@ -52,5 +52,7 @@ dependencies {
     //    ButterKnife
     implementation 'com.jakewharton:butterknife:10.2.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+    //ChatBot
+    implementation 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
 
 }

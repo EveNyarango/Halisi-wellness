@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.halisiwellness.R;
@@ -18,6 +19,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @BindView(R.id.login_btn) Button mLogonBtn;
     @BindView(R.id.textRegister) TextView mTextRegister;
+    @BindView(R.id.botimageView) ImageView mBotImageView;
 
 
 
@@ -41,6 +43,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBotImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this,ChatBoxActivity.class);
                 startActivity(intent);
             }
         });
