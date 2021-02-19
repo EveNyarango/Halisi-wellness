@@ -17,7 +17,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
-      
+
 
         <activity android:name=".ui.LowCholestrarolMeal">
             <meta-data
@@ -105,10 +105,10 @@
 
         </activity>
 
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
         <activity android:name=".ui.ArticlesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -117,8 +117,8 @@
 
         <activity android:name=".ui.AppointmentActivity">
             <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.halisiwellness.ui.MainActivity" /></activity>
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.halisiwellness.ui.MainActivity" /></activity>
 
         <activity android:name=".ui.ProfileActivity" >
             <meta-data
