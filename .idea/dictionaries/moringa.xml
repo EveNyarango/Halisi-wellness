@@ -2,7 +2,9 @@
   <dictionary name="moringa">
     <words>
       <w>firstname</w>
+      <w>lunchy</w>
       <w>secondname</w>
+      <w>snacky</w>
     </words>
   </dictionary>
 </component>
