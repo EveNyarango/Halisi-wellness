@@ -93,12 +93,9 @@
             android:text="Submit"
             android:textColor="@color/colorTextIcons"
             android:textSize="15sp" />
-<<<<<<< HEAD
 
     </LinearLayout>
 
-=======
-    </LinearLayout>
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -111,5 +108,5 @@
         android:textAlignment="center"
         android:textSize="30dp"
         android:textStyle="bold" />
->>>>>>> c5e88874516a6b35f290ba623ca36c4cd74a4855
+
 </RelativeLayout>
