@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LoginActivity">
+    tools:context=".ui.LoginActivity"
+    android:background="@color/white">
 
 
     <ImageView
@@ -18,7 +19,7 @@
         android:layout_height="wrap_content"
         android:text="Login Your account"
         android:textSize="30dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="150dp"
         android:textColor="@color/black"
         android:textAlignment="center"
         android:gravity="center_horizontal" />
@@ -29,7 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/login_head"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:padding="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
@@ -93,6 +94,16 @@
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:padding="10dp"/>
+
+
+    <ImageView
+        android:layout_below="@id/textRegister"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="280dp"
+        android:id="@+id/botimageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/bot" />
 
 
 </RelativeLayout>

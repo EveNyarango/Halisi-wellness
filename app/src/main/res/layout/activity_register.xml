@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.RegisterActivity">
+    tools:context=".ui.RegisterActivity"
+    android:background="@color/white">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -30,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/register_head"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:padding="20dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
@@ -48,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/register_name"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:padding="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
@@ -110,7 +111,7 @@
         android:layout_height="wrap_content"
         android:text="REGISTER NOW"
         android:textColor="@color/white"
-        android:background="#FFFFFF"
+        android:background="@drawable/button"
         android:layout_below="@id/confirm_password"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
