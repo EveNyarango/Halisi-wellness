@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/green3"
+    android:background="@drawable/nut6"
     android:layout_height="match_parent"
     android:orientation="vertical"
 
@@ -72,7 +72,7 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/butcherman"
             android:text="Halisi"
-            android:textColor="#fff"
+            android:textColor="@color/colorAccent"
             android:textSize="100sp" />
     </RelativeLayout>
 
@@ -94,7 +94,7 @@
                 android:fontFamily="@font/butcherman"
                 android:outlineAmbientShadowColor="#764D4D"
                 android:text="Welcome To Halisi wellness"
-                android:textColor="#fff"
+                android:textColor="@color/colorAccent"
                 android:textSize="24sp" />
 
         </RelativeLayout>

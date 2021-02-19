@@ -25,27 +25,43 @@ public class ProfileActivity extends AppCompatActivity {
     private EditText mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
 
-    EditText Firstname,  Secondname, Birth2, Number2, Weight2, Height2;
-    Button  BtnSave;
-    SharedPreferences sp;
-    String FirstnameStr, SecondnameStr, Birth2Str, Number2Str, Weight2Str, Height2Str;
+    EditText editText_Firstname,  editText_Secondname, editText_Birth2, editText_Number2, editText_Weight2, editText_Height2;
+    Button  button_BtnSave;
+
+    SharedPreferences sharedPreferences;
+
+    private static final String SHARED_PREF_PROFILE = "mypref";
+    private static final String KEY_FIRSTNAME = "firstname";
+    private static final String KEY_SECONDNAME = "secondname";
+    private static final String KEY_BIRTH2 = "birth2";
+    private static final String KEY_NUMBER2 = "number2";
+    private static final String KEY_WEIGHT2 = "weight2";
+    private static final String KEY_HEIGHT2 = "height2";
+//    String FirstnameStr, SecondnameStr, Birth2Str, Number2Str, Weight2Str, Height2Str;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        mDisplayDate = (EditText) findViewById(R.id.Birth2);
+        mDisplayDate = (EditText) findViewById(R.id.editText_Birth2);
 
 //        sharedPreference
-        Firstname = findViewById(R.id.Firstname);
-        Secondname = findViewById(R.id.Secondname);
-        Birth2 = findViewById(R.id.Birth2);
-        Number2 = findViewById(R.id.Number2);
-        Weight2 = findViewById(R.id.Weight2);
-        Height2 = findViewById(R.id.Height2);
-        BtnSave = findViewById(R.id.BtnSave);
-        sp = getSharedPreferences("MyUserPrefs", Context.MODE_PRIVATE);
+        editText_Firstname = findViewById(R.id.editText_Firstname);
+        editText_Secondname = findViewById(R.id.editText_Secondname);
+        editText_Birth2 = findViewById(R.id.editText_Birth2);
+        editText_Number2 = findViewById(R.id.editText_Number2);
+        editText_Weight2 = findViewById(R.id.editText_Weight2);
+        editText_Height2 = findViewById(R.id.editText_Height2);
+        button_BtnSave = findViewById(R.id.button_BtnSave);
+        sharedPreferences = getSharedPreferences(SHARED_PREF_PROFILE,MODE_PRIVATE);
+
+        String firstname = sharedPreferences.getString(KEY_FIRSTNAME, null);
+
+        if(firstname !=null){
+            Intent intent = new Intent(ProfileActivity.this, ProfActivity.class);
+            startActivity(intent);
+        }
 
 
 
@@ -85,27 +101,22 @@ public class ProfileActivity extends AppCompatActivity {
 
 //        BtnSave.setOnClickListener(this);
 
-        BtnSave.setOnClickListener(new View.OnClickListener() {
+        button_BtnSave.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                FirstnameStr = Firstname.getText().toString();
-                SecondnameStr = Secondname.getText().toString();
-                Birth2Str = Birth2.getText().toString();
-                Number2Str = Number2.getText().toString();
-                Weight2Str = Weight2.getText().toString();
-                Height2Str = Height2.getText().toString();
 
-                SharedPreferences.Editor editor = sp.edit();
 
-                editor.putString("Firstname", FirstnameStr);
-                editor.putString("Secondname", SecondnameStr);
-                editor.putString("Birth2", Birth2Str);
-                editor.putString("Number2", Number2Str);
-                editor.putString("Weight2", Weight2Str);
-                editor.putString("Height2", Height2Str);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
 
-                editor.commit();
+                editor.putString(KEY_FIRSTNAME, editText_Firstname.getText().toString());
+                editor.putString(KEY_SECONDNAME, editText_Secondname.getText().toString());
+                editor.putString(KEY_BIRTH2, editText_Birth2.getText().toString());
+                editor.putString(KEY_NUMBER2, editText_Number2.getText(). toString());
+                editor.putString(KEY_WEIGHT2, editText_Weight2.getText().toString());
+                editor.putString(KEY_HEIGHT2, editText_Height2.getText().toString());
+
+                editor.apply();
 
                 Toast.makeText(ProfileActivity.this, "Successfully  created a profile", Toast.LENGTH_SHORT).show();
 

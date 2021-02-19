@@ -38,7 +38,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/Firstname"
+            android:id="@+id/editText_Firstname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="first name"
@@ -57,7 +57,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/Secondname"
+            android:id="@+id/editText_Secondname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="second name"
@@ -76,7 +76,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/Birth2"
+            android:id="@+id/editText_Birth2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Select Date"
@@ -95,7 +95,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/Number2"
+            android:id="@+id/editText_Number2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="+254"
@@ -113,7 +113,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/Weight2"
+            android:id="@+id/editText_Weight2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/border1"
@@ -131,7 +131,7 @@
             android:textSize="14sp" />
 
         <EditText
-            android:id="@+id/Height2"
+            android:id="@+id/editText_Height2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="metres"
@@ -141,10 +141,11 @@
 
 
         <Button
-            android:id="@+id/BtnSave"
-            android:layout_width="match_parent"
+            android:id="@+id/button_BtnSave"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
            android:layout_marginTop="20dp"
+            android:layout_marginLeft="110dp"
             android:background="@color/colorAccent"
             android:text="Save"
             android:textColor="@color/white" />
