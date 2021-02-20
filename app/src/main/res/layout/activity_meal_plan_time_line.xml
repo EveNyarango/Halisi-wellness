@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.vipulasri.timelineview.TimelineView android:id="@+id/timeline"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:markerSize="20dp"
+    app:lineWidth="2dp"
+    app:startLineColor="@color/colorPrimary"
+    app:endLineColor="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:lineStyleDashLength="8dp"
+    app:linePadding="5dp"/>

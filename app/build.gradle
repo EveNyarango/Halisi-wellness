@@ -55,4 +55,7 @@ dependencies {
     //ChatBot
     implementation 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
 
+    //TimePlan
+    implementation 'com.github.vipulasri:timelineview:1.1.0'
+
 }
