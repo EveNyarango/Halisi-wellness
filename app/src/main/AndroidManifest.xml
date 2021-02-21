@@ -152,6 +152,13 @@
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
 
+<activity android:name=".ui.DocActivity">
+    <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.example.halisiwellness.ui.MainActivity" />
+
+</activity>
+
     </application>
 
 </manifest>
