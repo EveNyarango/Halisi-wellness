@@ -88,7 +88,7 @@
         android:layout_marginBottom="40dp"
         android:gravity="center_horizontal"
         android:textColor="@color/white"
-        android:text="Book an appointment"
+        android:text="Appointment details"
         android:textAlignment="center"
         android:textSize="30dp"
         android:textStyle="bold" />
