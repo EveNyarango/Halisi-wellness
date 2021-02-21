@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.example.halisiwellness.R;
 
 public class DocActivity extends AppCompatActivity {
-    TextView textView_n1, textView_n2, textView_n3, textView_n4;
+    TextView textView_n1, textView_n2, textView_n3, textView_n4, textView2;
 
     Button button_BtnEdit;
     SharedPreferences sharedPreferences;
@@ -23,10 +23,14 @@ public class DocActivity extends AppCompatActivity {
     private static final String KEY_CITY = "city";
     private static final String KEY_PHONE = "phone number";
 
+    private static final String KEY_TITLE = "title";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doc);
+
+        textView2 = findViewById(R.id.textView2);
 
         textView_n1 = findViewById(R.id.textView_n1);
         textView_n2 = findViewById(R.id.textView_n2);
