@@ -5,6 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.AppointmentActivity">
 
+    <androidx.cardview.widget.CardView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/title">
+
 
 
     <LinearLayout
@@ -70,7 +78,7 @@
             android:background="@color/colorAccent"
             android:text="Back"
             android:textColor="@color/white" />
-    </LinearLayout>
-
+     </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
