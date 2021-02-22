@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.halisiwellness.R;
-import com.example.halisiwellness.ui.models.ChatMessage;
+import com.example.halisiwellness.models.ChatMessage;
 
 import java.util.List;
 
