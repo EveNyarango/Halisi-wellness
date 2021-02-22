@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.AppointmentActivity">
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="320dp"
         android:background="@drawable/ic_wave5"/>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -16,66 +18,86 @@
         android:padding="30dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true">
+
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/b"
             android:layout_width="match_parent"
-            android:textSize="20sp"
-            android:backgroundTint="@color/white"
-            android:textColor="@color/colorPrimaryDark"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:text="" />
+            android:text="Patient's Name:"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center_horizontal"
+            android:hint="patient's Name"
             android:background="@drawable/border1"
+            android:textColor="@color/colorAccent"
             android:padding="10dp"
-            android:hint="Patient's Name:" />
+            />
+
+
+        <TextView
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
 
         <EditText
             android:id="@+id/etName1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="15dp"
+            android:hint="Location"
             android:background="@drawable/border1"
-            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
             android:padding="10dp"
-            android:hint="City:" />
+            />
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number:"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
         <EditText
             android:id="@+id/etPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center_horizontal"
-            android:ems="10"
+            android:hint="+254"
             android:background="@drawable/border1"
             android:padding="10dp"
-            android:hint="Phone number:"
-            android:inputType="phone" />
+            />
+
+        <TextView
+            android:id="@+id/birth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
         <EditText
             android:id="@+id/etDate"
             android:layout_width="match_parent"
-            android:textSize="20dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center_horizontal"
             android:layout_height="wrap_content"
-            android:ems="10"
+            android:hint="Select Date"
             android:background="@drawable/border1"
+            android:textColor="@color/colorAccent"
             android:padding="10dp"
-            android:inputType="date"
-            android:hint="Date"/>
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
