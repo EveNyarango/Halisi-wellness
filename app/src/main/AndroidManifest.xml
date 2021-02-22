@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
+
         <activity android:name=".ui.LineActivity"></activity>
+        <activity android:name=".ui.MealPlanTimeLine"></activity>
+
         <activity
             android:name=".ui.LowCholestrarolMeal"
             android:parentActivityName=".ui.MainActivity">
