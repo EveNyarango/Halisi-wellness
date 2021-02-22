@@ -54,5 +54,10 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
     //ChatBot
     implementation 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
+//    timeline
+    implementation 'com.github.vipulasri:timelineview:1.1.0'
+
+    //TimePlan
+    implementation 'com.github.vipulasri:timelineview:1.1.0'
 
 }

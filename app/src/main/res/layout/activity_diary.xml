@@ -6,7 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".ui.DiaryActivity">
 
-
+    <com.github.vipulasri.timelineview.TimelineView
+        android:id="@+id/timeline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:markerSize="20dp"
+        app:lineWidth="2dp"
+        app:startLineColor="@color/colorAccent"
+        app:endLineColor="@color/colorAccent"
+        app:linePadding="5dp"/>
 
     <Button
         android:id="@+id/button_btnDate"
