@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/butcherman"
-            android:text="Halisi  Wellness"
+            android:text="Halisi"
             android:textColor="@color/white"
             android:textSize="80sp" />
     </RelativeLayout>

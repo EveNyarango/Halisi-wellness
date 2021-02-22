@@ -14,7 +14,7 @@
         android:background="@drawable/ic_wave5" />
 
     <ImageView
-        android:id="@+id/Profile2"
+        android:id="@+id/ProfileImage"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_centerHorizontal="true"
