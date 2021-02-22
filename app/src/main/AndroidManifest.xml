@@ -4,6 +4,7 @@
     package="com.example.halisiwellness">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +15,7 @@
         android:theme="@style/Theme.HalisiWellness">
 
         <activity android:name=".ui.LineActivity"></activity>
-        <activity android:name=".ui.MealPlanTimeLine"></activity>
+
 
         <activity
             android:name=".ui.LowCholestrarolMeal"
