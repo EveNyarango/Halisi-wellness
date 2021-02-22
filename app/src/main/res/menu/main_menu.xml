@@ -10,6 +10,15 @@
 <!--        app:showAsAction="always"-->
 <!--        app:actionViewClass="androidx.appcompat.widget.SearchView"-->
 <!--        />-->
+
+    <item
+        android:id="@+id/check"
+        android:title="Check"
+        android:icon="@drawable/ic_baseline"
+        app:showAsAction="ifRoom"
+        />
+
+
     <item
         android:id="@+id/action_logout"
         android:title="Logout"

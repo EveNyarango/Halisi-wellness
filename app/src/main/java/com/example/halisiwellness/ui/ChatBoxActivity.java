@@ -2,26 +2,17 @@ package com.example.halisiwellness.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.res.AssetManager;
 import android.os.Bundle;
-import android.os.Environment;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.halisiwellness.R;
-import com.example.halisiwellness.ui.models.ChatMessage;
+import com.example.halisiwellness.models.ChatMessage;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.Timer;
 
 import adapter.ChatMessageAdapter;
 

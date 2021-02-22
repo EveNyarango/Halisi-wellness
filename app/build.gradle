@@ -23,6 +23,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildTypes.each {
+
+        it.buildConfigField 'String', 'HALISI_TOKEN', HalisiToken
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -54,8 +60,17 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
     //ChatBot
     implementation 'me.himanshusoni.chatmessageview:chat-message-view:1.0.3'
+//    timeline
+    implementation 'com.github.vipulasri:timelineview:1.1.0'
 
     //TimePlan
     implementation 'com.github.vipulasri:timelineview:1.1.0'
+
+
+//retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+
 
 }
