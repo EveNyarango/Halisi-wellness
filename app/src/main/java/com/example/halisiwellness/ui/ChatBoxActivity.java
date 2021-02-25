@@ -14,7 +14,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-import adapter.ChatMessageAdapter;
+import com.example.halisiwellness.adapter.ChatMessageAdapter;
 
 public class ChatBoxActivity extends AppCompatActivity {
 
