@@ -14,6 +14,6 @@ public interface HalisiApi {
     @POST("auth/api/register/")
     Call<UserData> register(@Body UserData userData);
 
-    String BASE_URL = "https://young-tundra-50012.herokuapp.com/";
-
+    @POST("/auth/api/login/")
+    Call<UserData> loginUser(@Body UserData userData);
 }
