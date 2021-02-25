@@ -1,20 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.LineActivity"
-    >
-    <com.github.vipulasri.timelineview.TimelineView
-        android:id="@+id/timeline"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        app:markerSize="20dp"
-        app:lineWidth="2dp"
-        app:startLineColor="@color/colorAccent"
-        app:endLineColor="@color/colorAccent"
-        app:linePadding="5dp"/>
+    tools:context=".ui.LineActivity">
+<!--    <com.github.vipulasri.timelineview.TimelineView-->
+<!--        android:id="@+id/timeline"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:markerSize="20dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        app:lineWidth="2dp"-->
+<!--        app:startLineColor="@color/colorAccent"-->
+<!--        app:endLineColor="@color/colorAccent"-->
+<!--        app:linePadding="5dp"/>-->
 
-</RelativeLayout>
+
+<!--Breakfast-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakfast:"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/break1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="50dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/break1" />
+
+        <EditText
+            android:id="@+id/editText_breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"
+            android:src = "@drawable/border1"
+            android:hint="Enter meal"
+             />
+        <EditText
+            android:id="@+id/editText_Quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:src = "@drawable/border1"
+            android:layout_marginTop="50dp"
+            android:hint="Enter quantity"
+            />
+        <EditText
+            android:id="@+id/editText_units"
+            android:layout_width="wrap_content"
+            android:src = "@drawable/border1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="70dp"
+            android:hint="Enter quantity"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+<!--    Lunch-->
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunch:"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/lunch"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="50dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/lunch" />
+
+
+
+        <!--        <EditText-->
+        <!--            android:id="@+id/editText_breakfast"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="28dp"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:layout_marginRight="200dp"-->
+        <!--            android:layout_weight="4"-->
+        <!--            android:hint="Enter meal"-->
+        <!--            android:padding="10sp"-->
+        <!--            android:textSize="14sp" />-->
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snack Time:"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/snack"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="50dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/snacks" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/editText_snacky"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter snacks"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:padding="10sp"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_weight="4"-->
+<!--            android:gravity="center_horizontal"/>-->
+
+    </androidx.cardview.widget.CardView>
+
+    
+</LinearLayout>

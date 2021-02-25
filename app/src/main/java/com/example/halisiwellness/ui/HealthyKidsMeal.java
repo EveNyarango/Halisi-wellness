@@ -9,7 +9,7 @@ import android.widget.ListView;
 
 import com.example.halisiwellness.R;
 
-import adapter.MealsPlanAdapter;
+import com.example.halisiwellness.adapter.MealsPlanAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 

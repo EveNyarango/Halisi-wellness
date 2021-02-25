@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.Path;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,6 +27,8 @@ import com.example.halisiwellness.R;
 import java.io.IOException;
 import java.util.Calendar;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class ProfileActivity extends AppCompatActivity {
     private static final  String TAG = "ProfileActivity";
     private ImageView ProfileImage;
@@ -35,8 +38,9 @@ public class ProfileActivity extends AppCompatActivity {
 
     EditText editText_Firstname,  editText_Secondname, editText_Birth2, editText_Number2, editText_Weight2, editText_Height2;
     Button  button_BtnSave;
-    ImageView mProfileImage;
+    CircleImageView mProfileImage;
     Uri imageUri;
+    Path imagePath;
 
     SharedPreferences sharedPreferences;
 
@@ -47,8 +51,7 @@ public class ProfileActivity extends AppCompatActivity {
     private static final String KEY_NUMBER2 = "number2";
     private static final String KEY_WEIGHT2 = "weight2";
     private static final String KEY_HEIGHT2 = "height2";
-//    private static  final String KEY_PROFILEIMAGE = "mProfileImage";
-//    String FirstnameStr, SecondnameStr, Birth2Str, Number2Str, Weight2Str, Height2Str;
+    private static  final String KEY_PROFILEIMAGE = "mProfileImage";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +69,7 @@ public class ProfileActivity extends AppCompatActivity {
         editText_Weight2 = findViewById(R.id.editText_Weight2);
         editText_Height2 = findViewById(R.id.editText_Height2);
         button_BtnSave = findViewById(R.id.button_BtnSave);
-//        mProfileImage = findViewById(R.id.Profile2);
+        mProfileImage = findViewById(R.id.Profile2);
         sharedPreferences = getSharedPreferences(SHARED_PREF_PROFILE,MODE_PRIVATE);
 
         String firstname = sharedPreferences.getString(KEY_FIRSTNAME, null);
@@ -112,7 +115,6 @@ public class ProfileActivity extends AppCompatActivity {
 
 
 
-//        BtnSave.setOnClickListener(this);
 
         button_BtnSave.setOnClickListener(new View.OnClickListener() {
 
@@ -128,7 +130,9 @@ public class ProfileActivity extends AppCompatActivity {
                 editor.putString(KEY_NUMBER2, editText_Number2.getText(). toString());
                 editor.putString(KEY_WEIGHT2, editText_Weight2.getText().toString());
                 editor.putString(KEY_HEIGHT2, editText_Height2.getText().toString());
-//                editor.putString(KEY_PROFILEIMAGE, mProfileImage.getDrawable().toString());
+//                editor.putString(KEY_PROFILEIMAGE, mProfileImage.getPath().toString());
+
+
 
                 editor.apply();
 
@@ -164,6 +168,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         if (requestCode == PICK_IMAGE  && resultCode == RESULT_OK);
         imageUri = data.getData();
+        
         try{
             Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), imageUri);
             ProfileImage.setImageBitmap(bitmap);
