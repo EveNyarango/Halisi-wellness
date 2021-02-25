@@ -12,7 +12,7 @@
         android:layout_width="50dp"
         android:layout_height="match_parent"
         app:markerSize="20dp"
-        app:lineWidth="2dp"
+        app:lineWidth="5dp"
         app:startLineColor="#ff0000"
         app:endLineColor="#454678"
         app:lineStyle="dash"/>
