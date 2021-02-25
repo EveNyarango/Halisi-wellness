@@ -283,7 +283,7 @@
                       android:layout_marginTop="12dp"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:text="Doctor's Access"
+                      android:text="Doctor's Only"
                       android:textColor="@color/colorAccent"/>
 
               </LinearLayout>
@@ -291,12 +291,5 @@
           </androidx.cardview.widget.CardView>
 
       </GridLayout>
-
-
-
-
-
-
-
   </LinearLayout>
 </androidx.core.widget.NestedScrollView>
