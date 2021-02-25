@@ -106,7 +106,7 @@
         app:boxCornerRadiusBottomEnd="5dp"
         app:boxStrokeWidthFocused="2dp"
         android:textColorHint="@color/colorAccent"
-        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
         app:startIconTint="@color/colorAccent"
         app:endIconMode="password_toggle"
         app:endIconTint="@color/black">
@@ -134,7 +134,7 @@
         app:boxStrokeColor="@color/colorAccent"
         app:boxCornerRadiusBottomEnd="5dp"
         app:boxStrokeWidthFocused="2dp"
-        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
         app:startIconTint="@color/colorAccent"
         app:endIconMode="password_toggle"
         android:textColorHint="@color/colorAccent"
