@@ -15,4 +15,6 @@ public interface HalisiApi {
             @Field("password") String password
             );
 
+    String BASE_URL = "https://young-tundra-50012.herokuapp.com/";
+
 }

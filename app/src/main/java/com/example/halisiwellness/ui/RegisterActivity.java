@@ -41,68 +41,17 @@ public class RegisterActivity extends AppCompatActivity {
         mRegisterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Email = mRegisterPhone.getText().toString();
-                Password = mRegisterPassword.getText().toString();
-                Name = mRegisterName.getText().toString();
-                CreateNewAccount(Email,Password,Name);
+//                Email = mRegisterPhone.getText().toString();
+//                Password = mRegisterPassword.getText().toString();
+//                Name = mRegisterName.getText().toString();
+//                CreateNewAccount(Email,Password,Name);
+
+                Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
+                startActivity(intent);
             }
         });
     }
-    private void CreateNewAccount(String email, String password, String name) {
-        if (TextUtils.isEmpty(email))
-        {
-            Toast.makeText(this,"Please enter you Email",Toast.LENGTH_LONG).show();
-        }
-        else if (TextUtils.isEmpty(password))
-        {
-            Toast.makeText(this,"Please enter Password",Toast.LENGTH_LONG).show();
-        }
-        else if (TextUtils.isEmpty(name))
-        {
-            Toast.makeText(this,"Please enter Name",Toast.LENGTH_LONG).show();
-        }
-        else
-        {
-            LoadingBar.show();
-            final DatabaseReference mRef;
-            mRef = FirebaseDatabase.getInstance().getReference();
-            mRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    if(!(snapshot.child("Users").child(name).exists()))
-                    {
-                        HashMap<String,Object> userdata =new HashMap<>();
-                        userdata.put("phone",email);
-                        userdata.put("password",password);
-                        userdata.put("name",name);
-                        mRef.child("Users").child(name).updateChildren(userdata)
-                                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<Void> task) {
-                                        if (task.isSuccessful())
-                                        {
-                                            LoadingBar.dismiss();
-                                            Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
-                                            startActivity(intent);
-                                            Toast.makeText(RegisterActivity.this,"Registration SuccessFul",Toast.LENGTH_LONG).show();
-                                        }
-                                        else {
-                                            Toast.makeText(RegisterActivity.this,"Please try again",Toast.LENGTH_LONG).show();
-                                        }
-                                    }
-                                });
-                    }
-                    else
-                    {
-                        Toast.makeText(RegisterActivity.this,"User with this email already exist",Toast.LENGTH_LONG ).show();
-                    }
-                }
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-                }
-            });
-        }
-    }
+
 }
 
 
