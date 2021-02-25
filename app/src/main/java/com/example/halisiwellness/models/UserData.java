@@ -1,6 +1,6 @@
-package com.example.halisiwellness.network;
+package com.example.halisiwellness.models;
 
-public class UserRequest {
+public class UserData {
     private String username;
     private String email;
     private String password;
