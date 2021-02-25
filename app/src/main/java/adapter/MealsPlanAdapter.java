@@ -50,7 +50,8 @@ public class MealsPlanAdapter extends ArrayAdapter<String> {
         if (singleItem == null) {
             LayoutInflater layoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             singleItem = layoutInflater.inflate(R.layout.meal_item, parent, false);
-            holder = new MealsPLanViewHolder(singleItem);
+            holder = new MealsPLanViewHolder(singleItem,0);
+
             singleItem.setTag(holder);
         }
 

@@ -1,9 +1,12 @@
 package com.example.halisiwellness.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,12 +18,12 @@ import butterknife.ButterKnife;
 public class MeelPlanActivity extends AppCompatActivity {
 
 
-    @BindView(R.id.highFibre) TextView mHighFibre;
-    @BindView(R.id.glutenFree) TextView mGlutenFree;
-    @BindView(R.id.looseWeight) TextView mLooseWeight;
-    @BindView(R.id.pregenancyMeal) TextView mPregnancyMeal;
-    @BindView(R.id.healthyKids) TextView mHealthyKids;
-    @BindView(R.id.lowChorestrarol) TextView mLowCholestrarol;
+    @BindView(R.id.highFibre) CardView mHighFibre;
+    @BindView(R.id.glutenFree) CardView mGlutenFree;
+    @BindView(R.id.looseWeight) CardView mLooseWeight;
+    @BindView(R.id.pregenancyMeal) CardView mPregnancyMeal;
+    @BindView(R.id.healthyKids) CardView mHealthyKids;
+    @BindView(R.id.lowChorestrarol) CardView mLowCholestrarol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +34,7 @@ public class MeelPlanActivity extends AppCompatActivity {
         mHighFibre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MeelPlanActivity.this,HighFibreMeal.class);
+                Intent intent = new Intent(MeelPlanActivity.this, HighFibreMeal.class);
                 startActivity(intent);
             }
         });
@@ -72,5 +75,14 @@ public class MeelPlanActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }

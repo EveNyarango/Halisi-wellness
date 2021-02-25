@@ -24,6 +24,7 @@
 
     <string-array name="details_articles">
 
+
         <item>Human T-cell leukemia virus type 1 was isolated as the retrovirus to be identified in humans.
             Here, we focused on Ficus pumila L. as a factor that be effective against human T-cell leukemia virus type 1.
             The significant and novel findings is that symptoms of patients with drinking Ficus pumila L.
@@ -31,6 +32,15 @@
             Twenty-eight of the 194 inpatients who underwent showed high levels of human T-cell leukemia virus type 1.
             Among human T-cell leukemia virus type 1-infected patients, those who were administered Ficus pumila L. extracts had no human T-cell leukemia virus type 1-related symptoms, while those who were not administered Ficus pumila L.
             extracts had human T-cell leukemia virus type 1-related diseases and a significantly poorer prognosis. This suggests that the Ficus pumila L. extracts may show some utility against virus infection.</item>
+
+        <item>Human T-cell leukemia virus type 1 was isolated as the retrovirus to be identified in humans. Here, we focused on Ficus pumila L. as a factor that be effective against human T-cell leukemia virus type 1.
+            The significant and novel findings is that symptoms of patients with drinking Ficus pumila L. extracts did not worsen despite a lack of aggressive pharmacotherapy against adult T-cell leukemia, a human
+            T-cell leukemia virus type 1-associated myelopathy, or T-cell leukemia virus type 1 uveitis. Twenty-eight of the 194 inpatients who underwent showed high levels of human T-cell leukemia virus type 1.
+            Among human T-cell leukemia virus type 1-infected patients, those who were administered Ficus pumila L.
+            extracts had no human T-cell leukemia virus type 1-related symptoms, while those who were not administered Ficus pumila L.
+            extracts had human T-cell leukemia virus type 1-related diseases and a significantly poorer prognosis. This suggests that the Ficus pumila L.
+            extracts may show some utility against virus infection.</item>
+
         <item>article2</item>
         <item>article3</item>
         <item>article4</item>

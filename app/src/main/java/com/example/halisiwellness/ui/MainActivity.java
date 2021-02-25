@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     @BindView(R.id.MealImageView) ImageView mMealImageView;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,10 +44,16 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         mCalImageView.setOnClickListener(this);
         mDiaryImageView.setOnClickListener(this);
         mMealImageView.setOnClickListener(this);
+
+
     }
+
+
 
     @Override
     public void onClick(View v) {
+
+
 
         if(v == mProfileImageView) {
             Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
@@ -85,4 +92,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         inflater.inflate(R.menu.main_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+
 }

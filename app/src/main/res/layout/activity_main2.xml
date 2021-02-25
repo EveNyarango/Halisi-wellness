@@ -7,20 +7,39 @@
 
     tools:context=".ui.MainActivity2">
 
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/title">
+
+
+
 
 
         <TextView
             android:id="@+id/txt"
             android:text="text"
+            android:textColor="@color/colorPrimaryDark"
             android:gravity="center"
-            android:textSize="20sp"
+            android:textSize="23sp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </TextView>
+
+
+
+        </androidx.cardview.widget.CardView>
     </ScrollView>
+
 
 </RelativeLayout>

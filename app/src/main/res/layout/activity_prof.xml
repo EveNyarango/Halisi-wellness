@@ -1,93 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ui.ProfileActivity">
+
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="320dp"
-        android:background="@drawable/ic_wave5"/>
+        android:layout_height="200dp"
+        android:background="@drawable/ic_wave5" />
 
     <ImageView
-        android:id="@+id/Profile2"
-        android:src="@drawable/user"
-        android:layout_centerHorizontal="true"
-        android:paddingTop="10dp"
+        android:id="@+id/ProfileImage"
         android:layout_width="80dp"
-        android:layout_height="80dp"/>
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/user" />
 
-<!--    <LinearLayout-->
-<!--        android:orientation="vertical"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:padding="30dp"-->
-<!--        android:layout_centerVertical="true"-->
-<!--        android:layout_centerHorizontal="true">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="30dp">
 
         <!--        1st name-->
         <TextView
-            android:id="@+id/t1"
+            android:id="@+id/textView_t1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
             android:text=""
-            android:textStyle="bold"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
 
         <!--        2nd name-->
         <TextView
-            android:id="@+id/t2"
+            android:id="@+id/textView_t2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text=""
-            android:textStyle="bold"
-            android:textSize="14sp" />
-
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
 
         <!--        D.O.B-->
         <TextView
-            android:id="@+id/t3"
+            android:id="@+id/textView_t3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text=""
-            android:textStyle="bold"
-            android:textSize="14sp" />
-
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
 
         <!--        phone number-->
         <TextView
-            android:id="@+id/t4"
+            android:id="@+id/textView_t4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text=""
-            android:textStyle="bold"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
 
         <!--        weight-->
         <TextView
-            android:id="@+id/t5"
+            android:id="@+id/textView_t5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text=""
-            android:textStyle="bold"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
 
         <!--        height-->
         <TextView
-            android:id="@+id/t6"
+            android:id="@+id/textView_t6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:text=""
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/button_BtnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorAccent"
+            android:text="Edit Profile"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
