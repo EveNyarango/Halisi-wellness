@@ -64,7 +64,7 @@ public class AppointmentActivity extends AppCompatActivity {
 
                 editor.apply();
 
-                Toast.makeText(AppointmentActivity.this, "Submitted successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AppointmentActivity.this, "Appointment submitted  successfully", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(AppointmentActivity.this, DocActivity.class);
                 startActivity(intent);
