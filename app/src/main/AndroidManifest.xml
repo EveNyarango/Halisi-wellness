@@ -4,6 +4,7 @@
     package="com.example.halisiwellness">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HalisiWellness">
-        <activity android:name=".ui.MealPlanTimeLine"></activity>
+
+        <activity android:name=".ui.LineActivity"></activity>
+
+
         <activity
             android:name=".ui.LowCholestrarolMeal"
             android:parentActivityName=".ui.MainActivity">
@@ -124,6 +128,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.halisiwellness.ui.MainActivity" />
         </activity>
+
+<activity android:name=".ui.DocActivity">
+    <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="com.example.halisiwellness.ui.MainActivity" />
+
+</activity>
+
     </application>
 
 </manifest>

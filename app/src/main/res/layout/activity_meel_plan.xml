@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".ui.MeelPlanActivity"
-    android:background="@drawable/back">
+    android:background="@drawable/nut3">
 
 
     <RelativeLayout

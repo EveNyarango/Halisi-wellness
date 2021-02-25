@@ -1,4 +1,4 @@
-package com.example.halisiwellness.ui.models;
+package com.example.halisiwellness.models;
 
 public class ChatMessage {
 
