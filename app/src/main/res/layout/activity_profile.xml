@@ -11,13 +11,22 @@
         android:layout_height="320dp"
         android:background="@drawable/ic_wave5"/>
 
-    <ImageView
+<!--    <ImageView-->
+<!--        android:id="@+id/Profile2"-->
+<!--        android:src="@drawable/user"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"/>-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/Profile2"
         android:src="@drawable/user"
         android:layout_centerHorizontal="true"
-        android:paddingTop="10dp"
-        android:layout_width="80dp"
-        android:layout_height="80dp"/>
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -144,8 +153,8 @@
             android:id="@+id/button_BtnSave"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:layout_marginTop="20dp"
-            android:layout_marginLeft="110dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
             android:background="@color/colorAccent"
             android:text="Save"
             android:textColor="@color/white" />

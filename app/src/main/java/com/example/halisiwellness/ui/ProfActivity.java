@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,7 +16,7 @@ import com.example.halisiwellness.R;
 
 public class ProfActivity extends AppCompatActivity {
     TextView textView_t1, textView_t2, textView_t3, textView_t4, textView_t5, textView_t6;
-//    ImageView mProfileImage;
+    ImageView ProfileImage;
     Button button_BtnEdit;
             SharedPreferences sharedPreferences;
 
@@ -40,7 +41,7 @@ public class ProfActivity extends AppCompatActivity {
         textView_t5 = findViewById(R.id.textView_t5);
         textView_t6 = findViewById(R.id.textView_t6);
         button_BtnEdit = findViewById(R.id.button_BtnEdit);
-//        mProfileImage = findViewById(R.id.ProfileImage);
+//        ProfileImage = findViewById(R.id.ProfileImage);
 
         sharedPreferences  = getApplicationContext().getSharedPreferences(SHARED_PREF_PROFILE, Context.MODE_PRIVATE);
         String firstname = sharedPreferences.getString(KEY_FIRSTNAME, null);
@@ -49,7 +50,7 @@ public class ProfActivity extends AppCompatActivity {
         String number2 =sharedPreferences.getString(KEY_NUMBER2, null);
         String weight2 =sharedPreferences.getString(KEY_WEIGHT2, null);
         String height2 = sharedPreferences.getString(KEY_HEIGHT2, null);
-//        String ProfileImage = sharedPreferences.getString(KEY_PROFILEIMAGE, null);
+//        String mProfileImage = sharedPreferences.getString(KEY_PROFILEIMAGE, null);
 
         if(firstname !=null || secondname !=null || birth2 !=null || number2 !=null || weight2 !=null || height2 !=null) {
 
@@ -59,6 +60,9 @@ public class ProfActivity extends AppCompatActivity {
             textView_t4.setText( "Phone number: "+ number2);
             textView_t5.setText( "Height: "+ height2);
             textView_t6.setText( "Weight: "+ weight2);
+//            ProfileImage.setImageURI(Uri.parse("ProfileImage" + mProfileImage));
+
+
 
         }
 
