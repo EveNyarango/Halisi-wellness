@@ -21,13 +21,13 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
 
-    @BindView(R.id.ProfileImageView)
-    ImageView mProfileImageView;
+    @BindView(R.id.ProfileImageView) ImageView mProfileImageView;
     @BindView(R.id.AppointImageView) ImageView mAppointImageView;
     @BindView(R.id.BlogImageView) ImageView mBlogImageView;
     @BindView(R.id.CalImageView) ImageView mCalImageView;
     @BindView(R.id.DiaryImageView) ImageView mDiaryImageView;
     @BindView(R.id.MealImageView) ImageView mMealImageView;
+    @BindView(R.id.DocImageView) ImageView mDocImageView;
 
 
 
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         mCalImageView.setOnClickListener(this);
         mDiaryImageView.setOnClickListener(this);
         mMealImageView.setOnClickListener(this);
+        mDocImageView.setOnClickListener(this);
 
 
     }
@@ -81,6 +82,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         if(v == mMealImageView) {
             Intent intent = new Intent(MainActivity.this, MeelPlanActivity.class);
+            startActivity(intent);
+        }
+
+        if(v == mDocImageView){
+            Intent intent = new Intent(MainActivity.this, DocActivity.class);
             startActivity(intent);
         }
 

@@ -22,6 +22,7 @@ public class DocActivity extends AppCompatActivity {
     private static final String KEY_PATIENTNAME = "patientname";
     private static final String KEY_CITY = "city";
     private static final String KEY_PHONE = "phone number";
+    private static final String KEY_DATE = "date";
 
     private static final String KEY_TITLE = "title";
 
@@ -43,12 +44,14 @@ public class DocActivity extends AppCompatActivity {
         String patientname = sharedPreferences.getString(KEY_PATIENTNAME, null);
         String city = sharedPreferences.getString(KEY_CITY, null);
         String phone = sharedPreferences.getString(KEY_PHONE, null);
+        String date = sharedPreferences.getString(KEY_DATE, null);
 
-        if(patientname != null || city != null || phone != null) {
+        if(patientname != null || city != null || phone != null || date != null) {
 
             textView_n1.setText( "Patient's Name: "+ patientname);
             textView_n2.setText( "Location: "+ city);
             textView_n3.setText( "Phone number: "+ phone);
+            textView_n4.setText("date: "+ date);
 
         }
 
@@ -59,7 +62,7 @@ public class DocActivity extends AppCompatActivity {
                 editor.clear();
                 editor.commit();
                 finish();
-                Toast.makeText(DocActivity.this, "Our admin team will reach out to you for further notifications ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DocActivity.this, " ", Toast.LENGTH_SHORT).show();
             }
         });
     }
