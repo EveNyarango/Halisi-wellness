@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/green3"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
     tools:context=".ui.ArticlesActivity">
 
     <androidx.cardview.widget.CardView
