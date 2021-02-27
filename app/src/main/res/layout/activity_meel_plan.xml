@@ -8,10 +8,14 @@
     android:weightSum="10"
     tools:context=".ui.MeelPlanActivity"
     android:background="@drawable/nut3">
+
+
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
@@ -22,13 +26,17 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="30dp" />
+
     </RelativeLayout>
+
     <GridLayout
         android:columnCount="2"
         android:rowCount="6"
         android:columnOrderPreserved="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+
         <!--fibre-->
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -46,11 +54,13 @@
                 android:padding="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/snacks" />
+
                 <TextView
                     android:id="@+id/highFibre"
                     android:layout_width="wrap_content"
@@ -60,8 +70,10 @@
                     android:textStyle="bold"
                     android:textAlignment="center"
                     android:textColor="@color/colorAccent" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <!--chlestrol-->
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -79,11 +91,13 @@
                 android:padding="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/lowcholestrarol" />
+
                 <TextView
                     android:id="@+id/lowChorestrarol"
                     android:layout_width="wrap_content"
@@ -93,9 +107,12 @@
                     android:textStyle="bold"
                     android:textAlignment="center"
                     android:textColor="@color/colorAccent" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <!--        gluten-->
+
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -112,11 +129,13 @@
                 android:padding="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/pregnancy" />
+
                 <TextView
                     android:id="@+id/glutenFree"
                     android:layout_width="wrap_content"
@@ -126,9 +145,12 @@
                     android:textStyle="bold"
                     android:textAlignment="center"
                     android:textColor="@color/colorAccent" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <!--        weightloss-->
+
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -145,11 +167,13 @@
                 android:padding="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/glutefree" />
+
                 <TextView
                     android:id="@+id/looseWeight"
                     android:layout_width="wrap_content"
@@ -159,8 +183,10 @@
                     android:textStyle="bold"
                     android:textAlignment="center"
                     android:textColor="@color/colorAccent" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <!--        pregnancy-->
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -178,11 +204,13 @@
                 android:padding="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/pregnancy" />
+
                 <TextView
                     android:id="@+id/pregenancyMeal"
                     android:layout_width="wrap_content"
@@ -192,9 +220,12 @@
                     android:textStyle="bold"
                     android:textAlignment="center"
                     android:textColor="@color/colorAccent" />
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <!--        kids-->
+
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -211,11 +242,13 @@
                 android:padding="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_horizontal"
                     android:src="@drawable/healthykids" />
+
                 <TextView
                     android:id="@+id/healthyKids"
                     android:layout_width="wrap_content"
@@ -228,7 +261,19 @@
                     android:shadowDx="2"
                     android:shadowDy="4"
                     android:shadowColor="#67ff98"/>
+
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+
+
     </GridLayout>
+
+
+
+
 </LinearLayout>
+
+
+
+

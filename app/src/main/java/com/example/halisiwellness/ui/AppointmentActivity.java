@@ -111,10 +111,16 @@ public class AppointmentActivity extends AppCompatActivity {
 
                 Toast.makeText(AppointmentActivity.this, "Appointment submitted  successfully admin team will reach out to you for further notifications", Toast.LENGTH_SHORT).show();
 
-//                Intent intent = new Intent(AppointmentActivity.this, DocActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(AppointmentActivity.this, MainActivity.class);
+                startActivity(intent);
+
+
             }
+
         });
 
     }
+
+
+
 }
