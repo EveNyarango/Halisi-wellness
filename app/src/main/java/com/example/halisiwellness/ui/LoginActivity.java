@@ -17,7 +17,7 @@ import com.example.halisiwellness.models.UserData;
 import com.example.halisiwellness.network.HalisiApi;
 import com.example.halisiwellness.network.HalisiClient;
 import com.google.android.material.textfield.TextInputEditText;
-import org.parceler.Parcels;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.login_btn) Button mLogonBtn;
     @BindView(R.id.login_email)
     EditText mLoginEmail;
-    @BindView(R.id.login1_password)
+    @BindView(R.id.login_password)
     TextInputEditText mPassword;
     @BindView(R.id.textRegister) TextView mTextRegister;
     @BindView(R.id.botimageView) ImageView mBotImageView;

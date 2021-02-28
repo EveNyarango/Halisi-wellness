@@ -53,7 +53,7 @@ public class ChatBoxActivity extends AppCompatActivity {
             ChatMessage chatMessage = new ChatMessage(message, true, false);
             mAdapter.add(chatMessage);
             //respond as Helloworld
-            mimicOtherMessage("Thank You Contacting Halisi Wellness");
+            mimicOtherMessage("Thank You For Contacting Halisi Wellness");
         }
 
         private void mimicOtherMessage(String message) {
