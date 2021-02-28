@@ -287,7 +287,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText_calorie2"
+                    android:id="@+id/editText_calories2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/calories2"
@@ -417,7 +417,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText_calorie3"
+                    android:id="@+id/editText_calories3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/calories3"
@@ -548,7 +548,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText_calorie4"
+                    android:id="@+id/editText_calories4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/calories4"
