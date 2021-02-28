@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             startActivity(intent);
         }
         if(v == mDiaryImageView) {
-            Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
+            Intent intent = new Intent(MainActivity.this, LineActivity.class);
             startActivity(intent);
         }
 
