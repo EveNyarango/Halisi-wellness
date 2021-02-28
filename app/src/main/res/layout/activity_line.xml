@@ -1,30 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nut3"
+    android:fillViewport="false">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".ui.LineActivity">
+
+
 <!--    <com.github.vipulasri.timelineview.TimelineView-->
 <!--        android:id="@+id/timeline"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="match_parent"-->
 <!--        app:markerSize="20dp"-->
 <!--        android:layout_marginLeft="10dp"-->
-<!--        app:lineWidth="2dp"-->
+<!--        app:lineWidth="20dp"-->
 <!--        app:startLineColor="@color/colorAccent"-->
 <!--        app:endLineColor="@color/colorAccent"-->
 <!--        app:linePadding="5dp"/>-->
 
 
-<!--Breakfast-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Diary"
+            android:layout_marginLeft="140dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_btnDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="140dp"
+        android:text="Choose Date"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+
+        />
+
+    <!--Breakfast-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_margin="20dp"
+        app:cardCornerRadius="15dp"
         android:layout_height="wrap_content">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
         <TextView
+            android:id="@+id/title1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Breakfast:"
@@ -32,126 +82,516 @@
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/break1"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerHorizontal="true"
-            android:paddingBottom="50dp"
-            android:layout_marginTop="40dp"
-            android:src="@drawable/break1" />
+            <TextView
+                android:id="@+id/meal1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/title1"
+                android:text="Meal"
+                android:textStyle="bold"
+                android:textSize="14sp" />
 
-        <EditText
-            android:id="@+id/editText_breakfast"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="30dp"
-            android:src = "@drawable/border1"
-            android:hint="Enter meal"
-             />
-        <EditText
-            android:id="@+id/editText_Quantity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="150dp"
-            android:src = "@drawable/border1"
-            android:layout_marginTop="50dp"
-            android:hint="Enter quantity"
-            />
-        <EditText
-            android:id="@+id/editText_units"
-            android:layout_width="wrap_content"
-            android:src = "@drawable/border1"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="70dp"
-            android:hint="Enter quantity"
-            />
+            <EditText
+                android:id="@+id/editText_meal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/meal1"
+                android:hint="enter meal"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                />
 
+            <TextView
+                android:id="@+id/quantity1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="quantity"
+                android:layout_below="@+id/editText_meal1"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText_quantity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quantity1"
+                android:hint="enter meal"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/units1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/editText_quantity1"
+                android:text="Units"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText_units1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/units1"
+                android:hint="enter unit"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/calories1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/editText_units1"
+                android:text="Calories"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editText_calories1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calories1"
+                android:hint="enter calories"
+                android:background="@drawable/border1"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/break1"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/break1" />
+
+
+        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 
-<!--    Lunch-->
+    </LinearLayout>
 
+<!--    lunch-->
 
-
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_margin="20dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lunch:"
-            android:textColor="@color/colorAccent"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/lunch"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerHorizontal="true"
-            android:paddingBottom="50dp"
-            android:layout_marginTop="40dp"
-            android:src="@drawable/lunch" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch:"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/meal2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/title2"
+                    android:text="Meal"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_meal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/meal2"
+                    android:hint="enter meal"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/quantity2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="quantity"
+                    android:layout_below="@+id/editText_meal2"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_quantity2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quantity2"
+                    android:hint="enter meal"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/units2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/editText_quantity2"
+                    android:text="Units"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_units2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/units2"
+                    android:hint="enter unit"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/calories2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/editText_units2"
+                    android:text="Calories"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_calories2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calories2"
+                    android:hint="enter calories"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
 
 
 
-        <!--        <EditText-->
-        <!--            android:id="@+id/editText_breakfast"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="28dp"-->
-        <!--            android:layout_marginTop="30dp"-->
-        <!--            android:layout_marginRight="200dp"-->
-        <!--            android:layout_weight="4"-->
-        <!--            android:hint="Enter meal"-->
-        <!--            android:padding="10sp"-->
-        <!--            android:textSize="14sp" />-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/lunch1"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/lunch" />
 
 
-    </androidx.cardview.widget.CardView>
+            </RelativeLayout>
 
+        </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
+    </LinearLayout>
+
+<!--    snack-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_margin="20dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Snack Time:"
-            android:textColor="@color/colorAccent"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/snack"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerHorizontal="true"
-            android:paddingBottom="50dp"
-            android:layout_marginTop="40dp"
-            android:src="@drawable/snacks" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
 
-<!--        <EditText-->
-<!--            android:id="@+id/editText_snacky"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:hint="Enter snacks"-->
-<!--            android:layout_marginTop="30dp"-->
-<!--            android:padding="10sp"-->
-<!--            android:textSize="14sp"-->
-<!--            android:layout_weight="4"-->
-<!--            android:gravity="center_horizontal"/>-->
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Snack Time:"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
 
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/meal3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/title3"
+                    android:text="Snacks/fruits:"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_meal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/meal3"
+                    android:hint="enter meal"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/quantity3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="quantity"
+                    android:layout_below="@+id/editText_meal3"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_quantity3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quantity3"
+                    android:hint="enter meal"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/units3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/editText_quantity3"
+                    android:text="Units"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_units3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/units3"
+                    android:hint="enter unit"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/calories3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/editText_units3"
+                    android:text="Calories"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_calories3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calories3"
+                    android:hint="enter calories"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/snack1"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/snacks" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+<!--    supper-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="15dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lunch:"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/meal4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/title4"
+                    android:text="Meal"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_meal4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/meal4"
+                    android:hint="enter meal"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/quantity4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="quantity"
+                    android:layout_below="@+id/editText_meal4"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_quantity4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quantity4"
+                    android:hint="enter meal"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/units4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/editText_quantity4"
+                    android:text="Units"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_units4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/units4"
+                    android:hint="enter unit"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/calories4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/editText_units4"
+                    android:text="Calories"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText_calories4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calories4"
+                    android:hint="enter calories"
+                    android:background="@drawable/border1"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/supper1"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/sapa" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_btnDiary2"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"/>
+
+
 
     
 </LinearLayout>
+</ScrollView>

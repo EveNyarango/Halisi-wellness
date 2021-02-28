@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     @BindView(R.id.DiaryImageView) ImageView mDiaryImageView;
     @BindView(R.id.MealImageView) ImageView mMealImageView;
     @BindView(R.id.DocImageView) ImageView mDocImageView;
+    @BindView(R.id.BotImageView) ImageView mBotImageView;
 
 
 
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         mDiaryImageView.setOnClickListener(this);
         mMealImageView.setOnClickListener(this);
         mDocImageView.setOnClickListener(this);
+        mBotImageView.setOnClickListener(this);
 
 
     }
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             startActivity(intent);
         }
         if(v == mDiaryImageView) {
-            Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
+            Intent intent = new Intent(MainActivity.this, LineActivity.class);
             startActivity(intent);
         }
 
@@ -89,6 +91,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         if(v == mDocImageView){
             Intent intent = new Intent(MainActivity.this, DocActivity.class);
+            startActivity(intent);
+        }
+
+        if (v == mBotImageView){
+            Intent intent = new Intent(MainActivity.this, ChatBoxActivity.class);
             startActivity(intent);
         }
 
