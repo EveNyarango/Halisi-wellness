@@ -28,7 +28,7 @@
             android:id="@+id/iv_image"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/bot" />
+            android:src="@drawable/ro" />
 
         <EditText
             android:id="@+id/et_message"
