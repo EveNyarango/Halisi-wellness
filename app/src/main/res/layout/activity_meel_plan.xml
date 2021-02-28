@@ -37,7 +37,7 @@
         android:layout_height="wrap_content">
 
 
-<!--fibre-->
+        <!--fibre-->
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,24 +55,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/snacks" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/snacks" />
 
-                    <TextView
-                        android:id="@+id/highFibre"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="High Fibre Meal"
-                        android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/highFibre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="High Fibre Meal"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent" />
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <!--chlestrol-->
         <androidx.cardview.widget.CardView
@@ -92,64 +92,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/lowcholestrarol" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/lowcholestrarol" />
 
-                    <TextView
-                        android:id="@+id/lowChorestrarol"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Low Chorestrol Meal"
-                        android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/lowChorestrarol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Low Chorestrol Meal"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent" />
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-<!--        gluten-->
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:elevation="6dp"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp"
-            android:layout_margin="12dp"
-            >
-            <LinearLayout
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pregnancy" />
-
-                    <TextView
-                        android:id="@+id/glutenFree"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Gluten Free Meal"
-                        android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorAccent" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-<!--        weightloss-->
+        <!--        gluten-->
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -168,63 +130,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/glutefree" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pregnancy" />
 
-                    <TextView
-                        android:id="@+id/looseWeight"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Loose Weight Meal"
-                        android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorAccent" />
+                <TextView
+                    android:id="@+id/glutenFree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Gluten Free Meal"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent" />
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-<!--        pregnancy-->
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:elevation="6dp"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp"
-            android:layout_margin="12dp"
-            >
-            <LinearLayout
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/pregnancy" />
-
-                    <TextView
-                        android:id="@+id/pregenancyMeal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Pregnancy Meal"
-                        android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorAccent" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-<!--        kids-->
+        <!--        weightloss-->
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -243,31 +168,106 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_gravity="center_horizontal"
-                        android:src="@drawable/healthykids" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/glutefree" />
 
-                    <TextView
-                        android:id="@+id/healthyKids"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Healthy Kids Meal"
-                        android:textStyle="bold"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorAccent"
-                        android:shadowDx="2"
-                        android:shadowDy="4"
-                        android:shadowColor="#67ff98"/>
+                <TextView
+                    android:id="@+id/looseWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Loose Weight Meal"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent" />
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--        pregnancy-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:elevation="6dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            >
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pregnancy" />
+
+                <TextView
+                    android:id="@+id/pregenancyMeal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Pregnancy Meal"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--        kids-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:elevation="6dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp"
+            >
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/healthykids" />
+
+                <TextView
+                    android:id="@+id/healthyKids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Healthy Kids Meal"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:shadowDx="2"
+                    android:shadowDy="4"
+                    android:shadowColor="#67ff98"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
 
 
-        </GridLayout>
+    </GridLayout>
 
 
 

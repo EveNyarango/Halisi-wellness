@@ -37,7 +37,11 @@
             android:layout_marginRight="4dp"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:layout_weight="1" />
+            android:hint="Write your message here"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorAccent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" />
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

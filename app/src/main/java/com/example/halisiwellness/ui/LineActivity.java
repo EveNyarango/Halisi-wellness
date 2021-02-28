@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.halisiwellness.R;
@@ -20,6 +21,7 @@ public class LineActivity extends AppCompatActivity {
 
 
     Button button_btnDiary2, button_btnDate;
+    EditText editText_meal1, editText_quantity1, editText_units1, editText_calories1, editText_meal2, editText_quantity2, editText_units2, editText_calories2, editText_meal3, editText_quantity3, editText_units3, editText_calories3,editText_meal4, editText_quantity4, editText_units4, editText_calories4;
 
     private Button mDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
@@ -31,6 +33,25 @@ public class LineActivity extends AppCompatActivity {
 
         mDate = (Button) findViewById(R.id.button_btnDate);
         button_btnDiary2 = findViewById(R.id.button_btnDiary2);
+        editText_meal1 = findViewById(R.id.editText_meal1);
+        editText_quantity1 = findViewById(R.id.editText_quantity1);
+        editText_units1 = findViewById(R.id.editText_units1);
+        editText_calories1 = findViewById(R.id.editText_calories1);
+
+        editText_meal2 = findViewById(R.id.editText_meal2);
+        editText_quantity2 = findViewById(R.id.editText_quantity2);
+        editText_units2 = findViewById(R.id.editText_units2);
+        editText_calories2 = findViewById(R.id.editText_calories2);
+
+        editText_meal3 = findViewById(R.id.editText_meal3);
+        editText_quantity3 = findViewById(R.id.editText_quantity3);
+        editText_units3 = findViewById(R.id.editText_units3);
+        editText_calories3 = findViewById(R.id.editText_calories3);
+
+        editText_meal4 = findViewById(R.id.editText_meal4);
+        editText_quantity4 = findViewById(R.id.editText_quantity4);
+        editText_units4 = findViewById(R.id.editText_units4);
+        editText_calories4 = findViewById(R.id.editText_calories4);
 
 
 //        DATE
