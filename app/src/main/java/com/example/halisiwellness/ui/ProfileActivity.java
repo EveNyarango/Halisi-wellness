@@ -74,10 +74,10 @@ public class ProfileActivity extends AppCompatActivity {
 
         String firstname = sharedPreferences.getString(KEY_FIRSTNAME, null);
 
-        if(firstname !=null){
-            Intent intent = new Intent(ProfileActivity.this, ProfActivity.class);
-            startActivity(intent);
-        }
+//        if(firstname !=null){
+//            Intent intent = new Intent(ProfileActivity.this, ProfActivity.class);
+//            startActivity(intent);
+//        }
 
 
 
