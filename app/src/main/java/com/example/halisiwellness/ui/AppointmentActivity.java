@@ -56,10 +56,10 @@ public class AppointmentActivity extends AppCompatActivity {
 
         String patientname = sharedPreferences.getString(KEY_PATIENTNAME, null);
 
-        if(patientname != null){
-            Intent intent = new Intent(AppointmentActivity.this, DocActivity.class);
-            startActivity(intent);
-        }
+//        if(patientname != null){
+//            Intent intent = new Intent(AppointmentActivity.this, DocActivity.class);
+//            startActivity(intent);
+//        }
 
         mDisplayDate.setOnClickListener(new View.OnClickListener() {
             @Override

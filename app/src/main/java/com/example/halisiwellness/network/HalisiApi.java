@@ -1,5 +1,6 @@
 package com.example.halisiwellness.network;
 
+import com.example.halisiwellness.models.Diary;
 import com.example.halisiwellness.models.Point;
 import com.example.halisiwellness.models.UserData;
 
@@ -12,7 +13,7 @@ import retrofit2.http.POST;
 
 public interface HalisiApi {
 
-    @POST("/auth/api/register/")
+    @POST("auth/api/register/")
     Call<UserData> register(@Body UserData userData);
 
     @POST("/auth/api/login/")
@@ -20,5 +21,9 @@ public interface HalisiApi {
 
     @POST("/appointment/api/book/")
     Call<Point> bookPoint(@Body Point point);
+
+
+    @POST("diary/entry/")
+     Call<Diary> foodDiary(@Body Diary diary);
 
 }

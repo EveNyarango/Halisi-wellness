@@ -312,7 +312,7 @@
 
                   <ImageView
                       android:id="@+id/BotImageView"
-                      android:src="@drawable/ro"
+                      android:src="@drawable/bot"
                       android:layout_width="80dp"
                       android:layout_height="80dp"/>
                   <TextView

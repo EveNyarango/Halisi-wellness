@@ -118,5 +118,5 @@
         android:id="@+id/botimageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/ro" />
+        android:src="@drawable/bot" />
 </RelativeLayout>
